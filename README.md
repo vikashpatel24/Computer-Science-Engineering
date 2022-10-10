@@ -21,10 +21,10 @@
             Folder Name: its-red-eagle.md
             
             "  
-            Vikash Patel (< >ADD two space after each line)  
-            portcyberx@gmail.com  
-            https://github.com/its-red-eagle/  
-            https://www.linkedin.com/in/its-red-eagle/  
+            Yor Name (< >ADD two space after each line)  
+            Email Id...   
+            https://github.com/......../  
+            https://www.linkedin.com/.........../  
             "
                 
                 
