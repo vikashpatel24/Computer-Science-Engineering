@@ -11,7 +11,8 @@
     - Create a folder using your github username with extension .md and add it into contributors profile folder.
           Example : its-red-eagle.md
          - In markdown file write:
-            - Your name
+            - Your name  
+            - Your email id
             - your github profile link
             - your linkedin profile link
             - and other platforms link if you want
@@ -20,6 +21,7 @@
             Folder Name: its-red-eagle.md
             
             "   Vikash Patel (< >ADD two space after each line)  
+                portcyberx@gmail.com
                 https://github.com/its-red-eagle/  
                 https://www.linkedin.com/in/its-red-eagle/
             "   
