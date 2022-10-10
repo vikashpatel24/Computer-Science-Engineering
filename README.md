@@ -1,7 +1,20 @@
 # Computer-Science
 
 ## Add about:
-### Internet, DBMS, Cloud Computing, Programming Languages, Software Engineering, Algorithms, Object Oriented Programming, Machine Learning, Operating Systems, Computer Network & Security, Computer Organization & Architecture, Web Development etc...
+Internet  
+DBMS  
+Cloud  
+Computing  
+Programming Languages  
+Software Engineering  
+Algorithms  
+Object Oriented Programming  
+Machine Learning  
+Operating Systems  
+Computer Network & Security  
+Computer Organization & Architecture  
+Web Development  
+### etc...
 
 # Instructions:
 * Only quality contributions will be merged.
