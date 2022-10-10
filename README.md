@@ -20,11 +20,12 @@
             Example:
             Folder Name: its-red-eagle.md
             
-            "   Vikash Patel (< >ADD two space after each line)  
-                portcyberx@gmail.com
-                https://github.com/its-red-eagle/  
-                https://www.linkedin.com/in/its-red-eagle/
-            "   
+            "  
+            Vikash Patel (< >ADD two space after each line)  
+            portcyberx@gmail.com  
+            https://github.com/its-red-eagle/  
+            https://www.linkedin.com/in/its-red-eagle/  
+            "
                 
                 
                 
