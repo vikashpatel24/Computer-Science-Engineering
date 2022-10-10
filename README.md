@@ -19,10 +19,8 @@
             Example:
             Folder Name: its-red-eagle.md
             
-            "   Vikash Patel
-            <br>
-                https://github.com/its-red-eagle/
-                <br>
+            "   Vikash Patel (< >ADD two space after each line)  
+                https://github.com/its-red-eagle/  
                 https://www.linkedin.com/in/its-red-eagle/
             "   
                 
