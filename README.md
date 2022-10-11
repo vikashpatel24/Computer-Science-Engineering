@@ -53,3 +53,4 @@ Web Development
 - [DBMS](DBMS/Database%20Management%20System/readme.md)
    - [Database Management System](DBMS/Database%20Management%20System/readme.md)
    - [ER Model](DBMS/ER%20Model/readme.md)
+- [Python](Python/python.md)   
