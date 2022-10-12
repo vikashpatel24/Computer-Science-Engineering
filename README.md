@@ -43,7 +43,7 @@ Web Development
                 
                 
                         
- ## Star and follow to support but it's not necessary to star and follow 
+ ## Star and follow to support
 
  # CONTRIBUTORS
  - [CONTRIBUTORS LIST, CLICK HERE](Contributors%20List/README.md)
