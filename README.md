@@ -1,19 +1,23 @@
 # Computer-Science
+#please refer the roadmaps for your learnig path
 
-## Add about:
-Internet  
-DBMS  
-Cloud  
-Computing  
-Programming Languages  
-Software Engineering  
-Algorithms  
-Object Oriented Programming  
-Machine Learning  
-Operating Systems  
-Computer Network & Security  
-Computer Organization & Architecture  
-Web Development  
+![partying-face_1f973](https://user-images.githubusercontent.com/81232337/195246743-86e59619-f6fd-4aa5-a494-e0778fedb517.gif)
+
+## Add about: 
+
+* Internet  
+* DBMS  
+* Cloud  
+* Computing  
+* Programming Languages  
+* Software Engineering  
+* Algorithms  
+* Object Oriented Programming  
+* Machine Learning  
+* Operating Systems  
+* Computer Network & Security  
+* Computer Organization & Architecture  
+* Web Development  
 ### etc...
 
 # Instructions:
@@ -23,6 +27,7 @@ Web Development
 * Add your linkedin profile using the following format:
     - Create a folder using your github username with extension .md and add it into contributors profile folder.
           Example : its-red-eagle.md
+
          - In markdown file write:
             - Your name  
             - Your email id
