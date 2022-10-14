@@ -8,7 +8,7 @@ Given two strings - a pattern 's'  and a text 't', determine if the pattern appe
 Calculate the hash for the pattern 's'. Calculate hash values for all the prefixes of the text 't'. Now, we can compare a substring of length |s| with s in constant time using the calculated hashes. So, compare each substring of length |s| with the pattern. This will take a total of O(|t|) time. Hence the final complexity of the algorithm is O(|t| + |s|) :  is required for calculating the hash of the pattern and  for comparing each substring of length |s| with the pattern.
 
 <h2>Implementation in C++: </h2>
-```C++
+```
 vector<int> rabin_karp(string const& s, string const& t) { </br>
     const int p = 31; </br>
     const int m = 1e9 + 9; </br>
@@ -37,7 +37,7 @@ vector<int> rabin_karp(string const& s, string const& t) { </br>
 ```
 <h2>Implementation in Java: </h2>
 
-```java
+```
 public class RabinKarp { </br>
   public final static int d = 10; </br>
   static void search(String pattern, String txt, int q) { </br>
@@ -80,7 +80,7 @@ public class RabinKarp { </br>
 }</br>
 ```
 <h2>Implementation in Python: </h2> </br>
-```python
+```
 d = 10 </br>
 def search(pattern, text, q): </br>
     m = len(pattern) </br>
