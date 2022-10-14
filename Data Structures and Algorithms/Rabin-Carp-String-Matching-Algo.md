@@ -8,112 +8,118 @@ Given two strings - a pattern 's'  and a text 't', determine if the pattern appe
 Calculate the hash for the pattern 's'. Calculate hash values for all the prefixes of the text 't'. Now, we can compare a substring of length |s| with s in constant time using the calculated hashes. So, compare each substring of length |s| with the pattern. This will take a total of O(|t|) time. Hence the final complexity of the algorithm is O(|t| + |s|) :  is required for calculating the hash of the pattern and  for comparing each substring of length |s| with the pattern.
 
 <h2>Implementation in C++: </h2>
+
 ```
-vector<int> rabin_karp(string const& s, string const& t) { </br>
-    const int p = 31; </br>
-    const int m = 1e9 + 9; </br>
-    int S = s.size(), T = t.size(); </br>
+vector<int> rabin_karp(string const& s, string const& t) {
+    const int p = 31;
+    const int m = 1e9 + 9;
+    int S = s.size(), T = t.size();
 
-    vector<long long> p_pow(max(S, T)); </br>
-    p_pow[0] = 1; </br>
-    for (int i = 1; i < (int)p_pow.size(); i++)</br>
-        p_pow[i] = (p_pow[i-1] * p) % m; </br>
+    vector<long long> p_pow(max(S, T));
+    p_pow[0] = 1;
+    for (int i = 1; i < (int)p_pow.size(); i++)
+        p_pow[i] = (p_pow[i-1] * p) % m;
 
-    vector<long long> h(T + 1, 0); </br>
-    for (int i = 0; i < T; i++) </br>
-        h[i+1] = (h[i] + (t[i] - 'a' + 1) * p_pow[i]) % m; </br>
-    long long h_s = 0; </br>
-    for (int i = 0; i < S; i++) </br>
-        h_s = (h_s + (s[i] - 'a' + 1) * p_pow[i]) % m; </br>
+    vector<long long> h(T + 1, 0);
+    for (int i = 0; i < T; i++)
+        h[i+1] = (h[i] + (t[i] - 'a' + 1) * p_pow[i]) % m;
+    long long h_s = 0;
+    for (int i = 0; i < S; i++)
+        h_s = (h_s + (s[i] - 'a' + 1) * p_pow[i]) % m;
 
-    vector<int> occurences; </br>
-    for (int i = 0; i + S - 1 < T; i++) { </br>
-        long long cur_h = (h[i+S] + m - h[i]) % m; </br>
-        if (cur_h == h_s * p_pow[i] % m)</br>
-            occurences.push_back(i);</br>
-    }</br>
-    return occurences;</br>
-}</br>
+    vector<int> occurences;
+    for (int i = 0; i + S - 1 < T; i++) {
+        long long cur_h = (h[i+S] + m - h[i]) % m;
+        if (cur_h == h_s * p_pow[i] % m)
+            occurences.push_back(i);
+    }
+    return occurences;
+}
+
 ```
+
 <h2>Implementation in Java: </h2>
 
 ```
-public class RabinKarp { </br>
-  public final static int d = 10; </br>
-  static void search(String pattern, String txt, int q) { </br>
-    int m = pattern.length(); </br>
-    int n = txt.length(); </br>
-    int i, j; </br>
-    int p = 0; </br>
-    int t = 0; </br>
-    int h = 1; </br>
-    for (i = 0; i < m - 1; i++) </br>
-      h = (h * d) % q; </br>
+public class RabinKarp {
+  public final static int d = 10;
+  static void search(String pattern, String txt, int q) {
+    int m = pattern.length();
+    int n = txt.length();
+    int i, j;
+    int p = 0;
+    int t = 0;
+    int h = 1;
+    for (i = 0; i < m - 1; i++)
+      h = (h * d) % q;
 // Calculate hash value for pattern and text
-    for (i = 0; i < m; i++) { </br>
-      p = (d * p + pattern.charAt(i)) % q; </br>
-      t = (d * t + txt.charAt(i)) % q; </br>
-    } </br>
-// Find the match </br>
-    for (i = 0; i <= n - m; i++) { </br>
-      if (p == t) { </br>
-        for (j = 0; j < m; j++) { </br>
-          if (txt.charAt(i + j) != pattern.charAt(j)) </br>
-            break; </br>
-        } </br>
-  if (j == m)</br>
-          System.out.println("Pattern is found at position: " + (i + 1)); </br>
-      } </br>
-  if (i < n - m) { </br>
-        t = (d * (t - txt.charAt(i) * h) + txt.charAt(i + m)) % q; </br>
-        if (t < 0) </br>
-          t = (t + q); </br>
-      } </br>
-    } </br>
-  } </br>
- public static void main(String[] args) { </br>
-    String txt = "ABCCDDAEFG"; </br>
-    String pattern = "CDD"; </br>
-    int q = 13; </br>
-    search(pattern, txt, q); </br>
-  } </br>
-}</br>
+    for (i = 0; i < m; i++) {
+      p = (d * p + pattern.charAt(i)) % q;
+      t = (d * t + txt.charAt(i)) % q;
+    }
+// Find the match
+    for (i = 0; i <= n - m; i++) {
+      if (p == t) {
+        for (j = 0; j < m; j++) {
+          if (txt.charAt(i + j) != pattern.charAt(j))
+            break;
+        }
+  if (j == m)
+          System.out.println("Pattern is found at position: " + (i + 1));
+      }
+  if (i < n - m) {
+        t = (d * (t - txt.charAt(i) * h) + txt.charAt(i + m)) % q;
+        if (t < 0)
+          t = (t + q);
+      }
+    }
+  }
+ public static void main(String[] args) {
+    String txt = "ABCCDDAEFG";
+    String pattern = "CDD";
+    int q = 13;
+    search(pattern, txt, q);
+  }
+}
+
 ```
-<h2>Implementation in Python: </h2> </br>
+<h2>Implementation in Python: </h2>
+
 ```
-d = 10 </br>
-def search(pattern, text, q): </br>
-    m = len(pattern) </br>
-    n = len(text) </br>
-    p = 0 </br>
-    t = 0 </br>
-    h = 1 </br>
-    i = 0 </br>
-    j = 0 </br>
+d = 10
+def search(pattern, text, q):
+    m = len(pattern)
+    n = len(text)
+    p = 0
+    t = 0
+    h = 1
+    i = 0
+    j = 0
 
-    for i in range(m-1): </br>
-        h = (h*d) % q </br>
-    for i in range(m): </br>
-        p = (d*p + ord(pattern[i])) % q </br>
-        t = (d*t + ord(text[i])) % q </br>
-    for i in range(n-m+1): </br>
-        if p == t: </br>
-            for j in range(m): </br>
-                if text[i+j] != pattern[j]: </br>
-                    break </br>
+    for i in range(m-1):
+        h = (h*d) % q
+    for i in range(m):
+        p = (d*p + ord(pattern[i])) % q
+        t = (d*t + ord(text[i])) % q
+    for i in range(n-m+1):
+        if p == t:
+            for j in range(m):
+                if text[i+j] != pattern[j]:
+                    break
 
-            j += 1 </br>
-            if j == m: </br>
-                print("Pattern is found at position: " + str(i+1)) </br>
+            j += 1
+            if j == m:
+                print("Pattern is found at position: " + str(i+1))
 
-        if i < n-m: </br>
-            t = (d*(t-ord(text[i])*h) + ord(text[i+m])) % q </br>
+        if i < n-m:
+            t = (d*(t-ord(text[i])*h) + ord(text[i+m])) % q
 
-            if t < 0: </br>
-                t = t+q </br>
+            if t < 0:
+                t = t+q
 
-text = "ABCCDDAEFG" </br>
-pattern = "CDD" </br>
-q = 13 </br>
-search(pattern, text, q) </br>
+text = "ABCCDDAEFG"
+pattern = "CDD"
+q = 13
+search(pattern, text, q)
+
 ```
