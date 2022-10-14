@@ -46,8 +46,6 @@ Web Development
                         
  ## Star and follow to support
 
- # CONTRIBUTORS
- - [CONTRIBUTORS LIST, CLICK HERE](Contributors%20List/README.md)
  
 # Table of Contents
 - [Web Technology](Web%20Technology/WebTechnology.md)
@@ -58,3 +56,15 @@ Web Development
 - [Machine Learning](Machine%20Learning/machine-learning.md)
 - [Operating System](Operating%20System/os.md)  
      For more, [click here](Operating%20System)
+     
+     
+     
+     
+# CONTRIBUTORS
+
+<a href="https://github.com/its-red-eagle/Computer-Science-Engineering/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=its-red-eagle/Computer-Science-Engineering" />
+</a>
+
+ - [CONTRIBUTORS LIST, CLICK HERE](Contributors%20List/README.md)     
+     
