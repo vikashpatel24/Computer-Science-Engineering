@@ -1,5 +1,8 @@
 <h1>Network Security </h1>
 
+
+![Screenshot_1](https://user-images.githubusercontent.com/28812356/195752793-2b2e08ae-b9f0-4950-b206-4a8bf204d8fd.png)
+
 Network Security protects your network and data from breaches, intrusions and other threats. This is a vast and overarching term that describes hardware and software solutions as well as processes or rules and configurations relating to network use, accessibility, and overall threat protection.
 
 Network Security involves access control, virus and antivirus software, application security, network analytics, types of network-related security (endpoint, web, wireless), firewalls, VPN encryption and more.
