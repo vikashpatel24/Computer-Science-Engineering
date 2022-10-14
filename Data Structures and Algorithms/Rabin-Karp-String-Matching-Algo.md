@@ -1,4 +1,4 @@
-<h1>Rabin Karp String Matching Algorithm</h1>
+<h1>Rabin-Karp String Matching Algorithm</h1>
 This algorithm is based on the concept of hashing, so if you are not familiar with string hashing, refer to the string hashing article on Internet. This algorithm was authored by Rabin and Karp in 1987. The Rabin-Karp string matching algorithm calculates a hash value for the pattern, as well as for each M-character subsequences of text to be compared. If the hash values are unequal, the algorithm will determine the hash value for next M-character sequence. If the hash values are equal, the algorithm will analyze the pattern and the M-character sequence. In this way, there is only one comparison per text subsequence, and character matching is only required when the hash values match.
 
 <h2>Problem: </h2>
