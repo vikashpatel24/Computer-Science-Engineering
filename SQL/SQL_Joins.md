@@ -8,6 +8,8 @@ SQL Joins are mostly used when a user is trying to extricate data from multiple 
 1. **Cartesian / Cross Joins**
 
    &nbsp;The Cartesian Join also known as Cross Join is the cartesian product of all the rows of the first table with all the rows of the second table.
+   ![image](https://user-images.githubusercontent.com/67328331/195988534-be52355d-c836-4af9-929f-9a69a3abc587.png)
+
 
 Let’s say if we have m rows in the first table and n rows in the second table, then the resulting cartesian join table will have m*n rows. This usually happens when the matching column or WHERE condition is not specified.<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
