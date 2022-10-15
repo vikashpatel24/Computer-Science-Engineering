@@ -103,7 +103,9 @@ SQL Outer joins give both matched and unmatched rows of data depending on the ty
 In this join a.k.a. SQL Left Join, all the rows of the left-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the right-hand table are added.
 
 Rows belonging to the left-hand table, and not having values from the right-hand table are presented as NULL values in the resulting table.
-![image](https://user-images.githubusercontent.com/67328331/195988755-f2ccd302-3c7a-404c-9693-0f7607404b6c.png)
+![image](https://user-images.githubusercontent.com/67328331/195988935-cc77ffb1-d1b1-49c9-bbdb-b86ea7c64a42.png)
+
+
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
@@ -127,7 +129,8 @@ ON Customers.ID = Shopping_Details.ID;
 Similar to the left outer join, in the case of the Right Outer Join a.k.a. SQL Right Join, all the rows on the right-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the left-hand table are added.
 
 Rows belonging to the right-hand table, and not having values from the left-hand table are presented as NULL values in the resulting table.
-![image](https://user-images.githubusercontent.com/67328331/195988775-79488f13-6a1f-48d1-b002-23abfef33196.png)
+![image](https://user-images.githubusercontent.com/67328331/195988986-893c17c3-2d11-4f92-9c04-e210955880aa.png)
+
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
@@ -152,9 +155,10 @@ ON Customers.ID = Shopping_Details.ID;
 (iii) **Full Outer Join**
 
 The full outer join (a.k.a. SQL Full Join) firstly adds all the rows matching to the stated condition in the query and then adds the remaining unmatched rows from both the tables. We need two or more tables for the join.
+![image](https://user-images.githubusercontent.com/67328331/195989018-5fe93d89-0c52-4883-a802-19692f07212a.png)
 
 After the matched rows are added to the output table, the unmatched rows of the left-hand table are added with subsequent NULL values, and then unmatched rows of the right-hand table are added with subsequent NULL values.
-![image](https://user-images.githubusercontent.com/67328331/195988827-31834d7b-2491-4f17-a9df-6d7790ab42ea.png)
+
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
