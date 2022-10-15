@@ -62,5 +62,44 @@ FROM Customers INNER JOIN Shopping_Details
 WHERE Customers.ID==Shopping_Details.ID;
 **
 ` <br>
+**Special Case of Inner Join: Natural Join**
+SQL Natural Join is a type of Inner join which is based on the condition that columns having the same name and same datatype present in both the tables to be joined.
+
+  **Syntax**:&nbsp;&nbsp;`SELECT * FROM 
+table-1 NATURAL JOIN table-2;
+
+` <br>
+ &nbsp;
+We can alternately use just the “JOIN” keyword instead of “INNER JOIN”.<br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
+    &nbsp;
+Let’s consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name and phone number. Here, CustID is the primary key that uniquely identifies each row. The second table named Shopping_Details gives us information about items bought by customers, i.e., item id, customer id (referencing the customer that bought the item), item name, and quantity.Write a query to find all details of customers who bought something from the store.<br><br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**
+SELECT *
+FROM Customers NATURAL JOIN Shopping_Details;
+
+**
+
+
+4. **Inner / Equi Join**
+
+SQL Inner Join or Equi Join is the most simple join where all rows from the intended tables are cached together if they meet the stated condition. Two or more tables are required for this join. Inner Join can be used with various SQL conditional statements like WHERE, GROUP BY, ORDER BY, etc.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   **Syntax**:&nbsp;&nbsp;`SELECT column-name 
+FROM table-1 INNER JOIN table-2 
+WHERE table-1.column-name = table-2.column-name;
+` <br>
+ &nbsp;
+We can alternately use just the “JOIN” keyword instead of “INNER JOIN”.<br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
+    &nbsp;
+Let’s consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name and phone number. Here, CustID is the primary key that uniquely identifies each row. The second table named Shopping_Details, gives us information about items bought by customers, i.e., item id, customer id (referencing the customer that bought the item), item name, and quantity.Write a query to get all the customers who have bought items from the store. Display their name, item bought, and quantity.<br><br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**SELECT Customers.Name, Shopping_Details.Item_Name, Shopping_Details.Quantity
+FROM Customers INNER JOIN Shopping_Details
+WHERE Customers.ID==Shopping_Details.ID;
+**
+` <br>
 
   
