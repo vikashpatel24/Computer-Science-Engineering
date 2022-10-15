@@ -15,12 +15,12 @@ FROM table1 CROSS JOIN table2;
 ` <br>
  &nbsp;
 SELECT is used to specify all columns we need to display in the resulting table. FROM specifies the tables where we need to look for these columns. The type of join, i.e., CROSS JOIN in this case, is placed between the two tables we wish to join.<br><br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ex**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let’s consider the scenario, where the first table contains customer details, i.e., customer id and customer name and the second table contains shopping details, i.e., product id and product name. <br><br>
-   
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Problem Statement**: `Write a query to give the cartesian product of the Customers and Shopping_Details tables. `<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**: `SELECT *
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;&nbsp;`Let’s consider the scenario, where the first table contains customer details, i.e., customer id and customer name and the second table contains shopping details, i.e., product id and product name.Write a query to give the cartesian product of the Customers and Shopping_Details tables.
+` <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`SELECT *
 FROM Customers CROSS JOIN Shopping_Details;
- `<br>
+` <br>
+
 
 2. **ALTER**
 
