@@ -74,12 +74,11 @@ WHERE Customers.ID==Shopping_Details.ID;
 SQL Natural Join is a type of Inner join which is based on the condition that columns having the same name and same datatype present in both the tables to be joined.
 
 ![image](https://user-images.githubusercontent.com/67328331/195988681-401c044e-392a-46e0-b78a-df2115da0559.png)
-
-  **Syntax**:&nbsp;&nbsp;`SELECT * FROM 
+ **Syntax**:&nbsp;&nbsp;`SELECT * FROM 
 table-1 NATURAL JOIN table-2;
-
 ` <br>
 
+  
 We can alternately use just the “JOIN” keyword instead of “INNER JOIN”.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
     &nbsp;
@@ -90,6 +89,7 @@ SELECT *
 FROM Customers NATURAL JOIN Shopping_Details;
 
 **
+` <br>
 
 
 # 4.**Outer Joins**
