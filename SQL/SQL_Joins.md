@@ -84,22 +84,21 @@ We can alternately use just the “JOIN” keyword instead of “INNER JOIN”.<
     &nbsp;
 Let’s consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name and phone number. Here, CustID is the primary key that uniquely identifies each row. The second table named Shopping_Details gives us information about items bought by customers, i.e., item id, customer id (referencing the customer that bought the item), item name, and quantity.Write a query to find all details of customers who bought something from the store.<br><br>
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**
-SELECT *
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**SELECT *
 FROM Customers NATURAL JOIN Shopping_Details;
-
 **
 ` <br>
 
 
-# 4.**Outer Joins**
+
+# 4. **Outer Joins**
 SQL Outer joins give both matched and unmatched rows of data depending on the type of outer joins. These types are outer joins are sub-divided into the following types:
 
 (i)Left Outer Join
 (ii)Right Outer Join
 (iii)Full Outer Join
 
-# (i)**Left Outer Join**
+# (i) **Left Outer Join**
 
 In this join a.k.a. SQL Left Join, all the rows of the left-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the right-hand table are added.
 
