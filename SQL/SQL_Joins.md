@@ -5,7 +5,7 @@ SQL Joins are mostly used when a user is trying to extricate data from multiple 
 
 ## Types of SQL Joins
 
-1. #**Cartesian / Cross Joins**
+1. ## **Cartesian / Cross Joins**
 
    &nbsp;The Cartesian Join also known as Cross Join is the cartesian product of all the rows of the first table with all the rows of the second table.
    ![image](https://user-images.githubusercontent.com/67328331/195988534-be52355d-c836-4af9-929f-9a69a3abc587.png)
