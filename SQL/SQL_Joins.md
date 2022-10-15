@@ -66,7 +66,6 @@ Let’s consider two tables of a supermarket set-up. The first table named Custo
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`SELECT Customers.Name, Shopping_Details.Item_Name, Shopping_Details.Quantity
 FROM Customers INNER JOIN Shopping_Details
 WHERE Customers.ID==Shopping_Details.ID;
-
 ` <br>
 
 # **Special Case of Inner Join: Natural Join**
@@ -86,7 +85,6 @@ Let’s consider two tables of a supermarket set-up. The first table named Custo
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`SELECT *
 FROM Customers NATURAL JOIN Shopping_Details;
-
 ` <br>
 
 
