@@ -56,6 +56,7 @@ SQL Inner Join or Equi Join is the most simple join where all rows from the inte
 FROM table-1 INNER JOIN table-2 
 WHERE table-1.column-name = table-2.column-name;
 ` <br>
+
  &nbsp;
 We can alternately use just the “JOIN” keyword instead of “INNER JOIN”.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
@@ -68,7 +69,8 @@ WHERE Customers.ID==Shopping_Details.ID;
 **
 ` <br>
 
-**Special Case of Inner Join: Natural Join**
+# **Special Case of Inner Join: Natural Join**
+ &nbsp;
 SQL Natural Join is a type of Inner join which is based on the condition that columns having the same name and same datatype present in both the tables to be joined.
 
 ![image](https://user-images.githubusercontent.com/67328331/195988681-401c044e-392a-46e0-b78a-df2115da0559.png)
