@@ -104,4 +104,26 @@ ON Customers.ID = Shopping_Details.ID;
 **
 ` <br>
 
+4. **Left Outer Join**
+
+In this join a.k.a. SQL Left Join, all the rows of the left-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the right-hand table are added.
+
+Rows belonging to the left-hand table, and not having values from the right-hand table are presented as NULL values in the resulting table.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+   **Syntax**:&nbsp;&nbsp;`SELECT column-name(s)
+FROM table1 LEFT OUTER JOIN table2
+ON table1.column-name = table2.column-name;
+` <br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
+    &nbsp;
+Let’s consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name and phone number. Here, CustID is the primary key that uniquely identifies each row. The second table named Shopping_Details, gives us information about items bought by customers, i.e., item id, customer id (referencing the customer that bought the item), item name, and quantity.Write a query to display all customers irrespective of items bought or not. Display the name of the customer and item bought. If nothing is bought, display NULL.<br><br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**SELECT Customers. Name, Shopping_Details.Item_Name
+FROM Customers LEFT OUTER JOIN Shopping_Details;
+ON Customers.ID = Shopping_Details.ID;
+**
+` <br>
+
   
