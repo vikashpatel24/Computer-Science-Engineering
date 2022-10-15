@@ -79,7 +79,7 @@ SQL Natural Join is a type of Inner join which is based on the condition that co
 table-1 NATURAL JOIN table-2;
 
 ` <br>
- &nbsp;
+
 We can alternately use just the “JOIN” keyword instead of “INNER JOIN”.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
     &nbsp;
