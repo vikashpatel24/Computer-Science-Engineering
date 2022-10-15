@@ -1,0 +1,202 @@
+opular Applications of Machine Learning in Daily Life
+Neelam TyagiApr 21, 2020Updated on: Jan 18, 2021
+7 Popular Applications of Machine Learning in Daily Life title banner
+The interest in Machine Learning for use in the various domains is expanding as the available amount of data increases with time. Machine learning proposes an abundance of techniques to extricate knowledge from data that can be rendered into purposeful objectives.
+
+ 
+
+ML algorithms can reinforce the field information and automated function mostly related to regulation and optimization. Moreover, machine learning along with computer vision has augmented many domains where medical diagnostic, statistical data analysis and algorithms, scientific research, etc included. Such practices have already been done in the arena of smartphone applications, computer appliances, online websites, cybersecurity, etc.   
+
+ 
+
+The extended data today is prevailing over multiple disciplines, obtaining interferences and valuable knowledge from data has appeared as the latest model of scientific inquiry as well as commercial application. In this blog, we will pick up some applications of machine learning implemented in our daily practices.
+
+ 
+
+ 
+
+Machine Learning Applications in Daily Life
+ 
+
+1. Commute Estimation
+ 
+
+In general, a single trip takes more than average time to complete, multiple modes of transportation are used for a trip including traffic timing to reach the destination. Reducing commute time is not simple yet, here below you find how machine learning is aiding in reducing commute time,
+
+ 
+
+Google’s Map: Using the location data from smartphones, Google Maps can inspect the agility of shifting traffic at any time, moreover map can organize user-reported traffic like construction, traffic, and accidents. By accessing relevant data and appropriate fed algorithms, Google Maps can reduce commuting time by indicating the fastest route.
+
+ 
+
+Riding Apps: From how to fix the price of the ride, and how to minimize the waiting time to how do riding cars fix up one’s trip with other passengers to lessen diversion. Yes, the solution is machine learning.  ML assists the company to estimate the price of a ride, computing optimal pickup location and ensuring the shortest route of the trip, also for fraud detection. For example, Uber uses machine learning to optimizes its services.
+
+ 
+
+Commercial flights to use Autopilot:  With the help of AI technology, Autopilots are taken care of Flights now. In a report of The NewYork Times, pilots reported doing manual flying of seven minutes, mainly during takeoff and landing, and the rest fly is done by autopilot.   
+
+ 
+
+(Also check: How Spotify Uses Machine Learning Models?)
+
+ 
+
+2. Email Intelligence
+ 
+
+Spam Filters: Some rules-based filters aren’t served actively in an email inbox such as when, for example, a message comes with the words “online consultancy”, “ online pharmacy”, or from “unknown address”. 
+
+ 
+
+ML is offering a powerful feature that filters email from a variety of signals, like words in the message, metadata of the message(such as who sent the message, from where it is sent). Even though it filters the emails based on “everyday deals” or “welcome messages” etc. With the use of ML, Gmail filters 99.9% of spam messages. 
+
+ 
+
+Email Classification: Gmail categories emails into groups Primary, Promotions, Social, and Update and label the email as important.
+
+ 
+
+Smart Replies: You must have observed how Gmail prompts simple phrases to respond to emails like “Thank You”, “Alright”, “Yes, I’m interested”. These responses are customized per email when ML and AI understand, estimate, and reflect on how one counters over time.  
+
+ 
+
+3. Banking and Personal Finance
+ 
+
+Fraud Prevention: In most of the cases, daily based transaction data is so high in volume and becomes complex for humans to review manually each transaction, then how to find out if a transaction is fraudulent.
+
+ 
+
+To tackle this problem, AI-based systems are designed that learn what type of transactions are fraudulent. This is how banks use AI.
+
+ 
+
+Companies are using neural networks to determine fraudulent transactions depending upon factors like the latest frequency of transactions, transaction size and type of retailer included.  
+
+ 
+
+Credit Decisions: When applying for credit cards or loans, the financial bodies have to determine quickly whether to admit or not. And, if accepting the proposal what could be the specific conditions to offer in terms of interest rate, credit line amount, etc.
+
+ 
+
+Financial institutions deploy ML algorithms to make credit decisions and determine the particular risk assessment for users separately. 
+
+ 
+
+(Related blog: Introduction to Financial Analysis)
+
+ 
+
+Check Deposit on Mobile: Moreover, AI technology has done mobile banking personalized and handy for those who have no time to visit banks. For example, banks offer the opportunity to submit checks through the smartphone app and dismiss the need of users to physically deliver a check to the bank.
+
+ 
+
+Most of the banks use the technology developed by Mitek to interpret and transform handwriting on checks into text through optical character recognition. 
+
+ 
+
+Showing the popular applications of Machine Learning implemented in daily life, that are commute estimation, smart email, banking/finance, evaluation & assessment, healthcare, social sites, and smart assistant
+
+Applications of Machine Learning in Daily Life
+
+4. Evaluation and Assessment
+ 
+
+In checking Plagiarism: ML can be used to build a plagiarism detector.  Many schools and universities demand plagiarism checkers analyze the writing skills of students.
+
+ 
+
+The algorithmic essence of plagiarism is the similarity functions that result in the numerical estimation of how identical two documents are. 
+
+ 
+
+Robo-readers: Prior, essay grading is a very complex task, but now researchers and organizations are building essay-grading AI systems. The GRE exam grades essays through one human reader and one Robo-reader, known as e-Rater.
+
+ 
+
+If the grade varies considerably, a second human reader is considered to settle the difference. (You may go to the article to know how Robo-readers functions).
+
+ 
+
+Near in the future, one-size-fits classes are replaced by personalized and flexible learning that will shape each students’ strengths and weaknesses individually.
+
+ 
+
+ML also assists in identifying students at-risk earlier so that schools can pay attention to those students by providing them with extra resources of learning and reduces dropout rates.
+
+ 
+
+For example, AI in the education sector helps in for personalized learning, voice assistants, aiding educators in administrative tasks and many more.
+
+ 
+
+5. Social Networking 
+ 
+
+Facebook: While uploading a photo on Facebook, it automatically reflects faces and suggests friends tag. Facebook uses AI and ML to identify faces. Moreover;
+
+ 
+
+It uses the ANN algorithm that imitates the human brain and power facial recognition software.
+Facebook uses AI to personalize newsfeed and makes sure to reflect posts that entertain one.
+It shows ads of a particular business that are relevant to one's' interest.  
+   
+
+Pinterest: It employs computer vision to automatically recognize objects in the images or “pin” and then recommend similar pins. Other applications cover pam prevention, search, and discovery, email marketing, ad performance, etc with the help of machine learning. 
+
+ 
+
+Snapchat: It offers facial filters (known as Lenses) that filter and track facial activity, permits users to tag animated images or digital masks that shift when their faces move.    
+
+ 
+
+Instagram: With the help of ML algorithms, sentiments behind the emojis can be identified. Instagram can make and auto-recommend emojis and emojis hashtags. There is the massive use of emoji across all demographics that are used to describe and explore by Instagram at a massive scale through emoji-to-text-translation.
+
+ 
+
+(Referred blog: Instagram Uses AI and Big Data) 
+
+ 
+
+6. Medical Diagnosis and Healthcare
+ 
+
+Machine Learning incorporates a soup of techniques and tools to deal with the diagnostic and prognostic issues in the diverse medical realms.  ML algorithms are highly used for;
+
+ 
+
+The analysis of medical data for detecting regularities in data,
+Handling inappropriate data,
+Explaining data generated by medical units,
+Also for effective monitoring of patients.
+ 
+
+(Must check: Healthcare data analytics)
+
+ 
+
+Machine learning also helps in estimating disease breakthroughs, driving medical information for outcomes research, planning and assisting therapy, and entire patient management. Along with machine learning, AI in healthcare is also implemented for efficient monitoring. 
+
+ 
+
+7. Personal Smart Assistants
+ 
+
+From Siri and Cortana to Google Assistant, there are plenty of functions when it comes to the personal assistant along with Amazon Alexa and Google Home.
+
+ 
+
+By implementing the AI to its entirety, these home devices, and personal assistants follow one’s commands including setting a reminder, searching online information, controlling lights, etc. 
+
+ 
+
+These devices and personal assistants, such as ML chatbots rely on Ml algorithms to collect information, understand one’s preferences, and improve the experience based on prior interactions with individuals.
+
+ 
+
+ 
+
+Conclusion
+ 
+
+It remains not worth amazing how machine learning and artificial intelligence have changed our life by making it easier, also with some of AI and ML trends we are expecting more growth in technologies. We have screened various applications here, the machine learning is used back in the arena to impact our daily lives, it also allows us to take business decisions, optimize operations and augment productivity for industries to stand out in the market. 
