@@ -1,4 +1,4 @@
-# What are Joins?
+# What are SQL Joins?
   &nbsp;
 SQL Joins are mostly used when a user is trying to extricate data from multiple tables (which have one-to-many or many-to-many relationships with each other) at one time. Join keyword merges two or more tables and creates a temporary image of the merged table.<br><br>
 
