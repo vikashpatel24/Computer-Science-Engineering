@@ -104,25 +104,55 @@ ON Customers.ID = Shopping_Details.ID;
 **
 ` <br>
 
-4. **Left Outer Join**
+4. **Right Outer Join**
 
-In this join a.k.a. SQL Left Join, all the rows of the left-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the right-hand table are added.
+Similar to the left outer join, in the case of the Right Outer Join a.k.a. SQL Right Join, all the rows on the right-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the left-hand table are added.
 
-Rows belonging to the left-hand table, and not having values from the right-hand table are presented as NULL values in the resulting table.
+Rows belonging to the right-hand table, and not having values from the left-hand table are presented as NULL values in the resulting table.
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
    **Syntax**:&nbsp;&nbsp;`SELECT column-name(s)
-FROM table1 LEFT OUTER JOIN table2
+FROM table1 RIGHT OUTER JOIN table2
 ON table1.column-name = table2.column-name;
 ` <br>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
     &nbsp;
-Let’s consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name and phone number. Here, CustID is the primary key that uniquely identifies each row. The second table named Shopping_Details, gives us information about items bought by customers, i.e., item id, customer id (referencing the customer that bought the item), item name, and quantity.Write a query to display all customers irrespective of items bought or not. Display the name of the customer and item bought. If nothing is bought, display NULL.<br><br>
+Let’s consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name and phone number. Here, CustID is the primary key that uniquely identifies each row. The second table named Shopping_Details, gives us information about items bought by customers, i.e., item id, customer id (referencing the customer that bought the item), item name, and quantity.
+Write a query to get all the items bought by customers , even if the customer does not exist in the Customer database. Display customer name and item name. If a customer doesn’t exist, display NULL.
+<br><br>
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**SELECT Customers. Name, Shopping_Details.Item_Name
-FROM Customers LEFT OUTER JOIN Shopping_Details;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**SELECT Customers.Name, Shopping_Details.Item_Name
+FROM Customers RIGHT OUTER JOIN Shopping_Details;
 ON Customers.ID = Shopping_Details.ID;
+
+**
+` <br>
+
+4. **Full Outer Join**
+
+The full outer join (a.k.a. SQL Full Join) firstly adds all the rows matching to the stated condition in the query and then adds the remaining unmatched rows from both the tables. We need two or more tables for the join.
+
+After the matched rows are added to the output table, the unmatched rows of the left-hand table are added with subsequent NULL values, and then unmatched rows of the right-hand table are added with subsequent NULL values.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+   **Syntax**:&nbsp;&nbsp;`SELECT column-name(s)
+FROM table1 FULL OUTER JOIN table2
+ON table1.column-name = table2.column-name;
+
+` <br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
+    &nbsp;
+Let’s consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name and phone number. Here, CustID is the primary key that uniquely identifies each row. The second table named Shopping_Details gives us information about items bought by customers, i.e., item id, customer id (referencing the customer that bought the item), item name, and quantity.
+Write a query to provide data for all customers and items ever bought from the store. Display name of customer and item name. If either data does not exist, display NULL.
+<br><br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`**SELECT Customers.Name, Shopping_Details.Item_Name
+FROM Customers FULL OUTER JOIN Shopping_Details
+WHERE Customer.ID = Shopping_Details.ID;
+
+
 **
 ` <br>
 
