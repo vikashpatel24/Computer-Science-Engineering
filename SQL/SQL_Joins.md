@@ -31,11 +31,10 @@ FROM Customers CROSS JOIN Shopping_Details;
   In SQL Self Join, a table is joined to itself. This means each row of the table is joined with itself and all other rows concerning stated conditions if any. In other words, we can say that it is a merge between two copies of the same table. This is extremely helpful when the foreign key references the primary key of the same table.
   ![image](https://user-images.githubusercontent.com/67328331/195988618-067f249b-8402-40d6-81e4-8f4faa14b310.png)
 
-    &nbsp;
-    **Syntax**:&nbsp;&nbsp;`SELECT a.column1 , b.column2
+  
+   **Syntax**:&nbsp;&nbsp;`SELECT a.column1 , b.column2
 FROM table_name a, table_name b
 WHERE some_condition;` <br>
- 
  &nbsp;
 Here we reference the same table with different names, i.e., a and b. This signifies a SELF JOIN.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
