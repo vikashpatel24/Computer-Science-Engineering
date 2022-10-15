@@ -1,4 +1,4 @@
-# Star the repo and follow to support
+# <b>Star and follow to support</b>
 # Computer-Science
 
 ## Add about:
