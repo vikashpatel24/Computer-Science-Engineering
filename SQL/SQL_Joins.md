@@ -4,8 +4,9 @@ SQL Joins are mostly used when a user is trying to extricate data from multiple 
 
 
 # **Types of SQL Joins**
+There are different types of joins in sql and these are as follows:
 
-1. **Cartesian / Cross Joins**
+# 1. **Cartesian / Cross Joins**
 
    &nbsp;The Cartesian Join also known as Cross Join is the cartesian product of all the rows of the first table with all the rows of the second table.
    ![image](https://user-images.githubusercontent.com/67328331/195988534-be52355d-c836-4af9-929f-9a69a3abc587.png)
@@ -26,15 +27,17 @@ FROM Customers CROSS JOIN Shopping_Details;
 
 
 
+
 # 2. **Self Join**
 
-  In SQL Self Join, a table is joined to itself. This means each row of the table is joined with itself and all other rows concerning stated conditions if any. In other words, we can say that it is a merge between two copies of the same table. This is extremely helpful when the foreign key references the primary key of the same table.
+   &nbsp;In SQL Self Join, a table is joined to itself. This means each row of the table is joined with itself and all other rows concerning stated conditions if any. In other words, we can say that it is a merge between two copies of the same table. This is extremely helpful when the foreign key references the primary key of the same table.<br><br>
   ![image](https://user-images.githubusercontent.com/67328331/195988618-067f249b-8402-40d6-81e4-8f4faa14b310.png)
 
   
    **Syntax**:&nbsp;&nbsp;`SELECT a.column1 , b.column2
 FROM table_name a, table_name b
 WHERE some_condition;` <br>
+
  &nbsp;
 Here we reference the same table with different names, i.e., a and b. This signifies a SELF JOIN.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
@@ -48,7 +51,7 @@ WHERE a.ID = b.supervisor_ID;
  
 # 3. **Inner / Equi Join**
 
-SQL Inner Join or Equi Join is the most simple join where all rows from the intended tables are cached together if they meet the stated condition. Two or more tables are required for this join. Inner Join can be used with various SQL conditional statements like WHERE, GROUP BY, ORDER BY, etc.
+&nbsp;SQL Inner Join or Equi Join is the most simple join where all rows from the intended tables are cached together if they meet the stated condition. Two or more tables are required for this join. Inner Join can be used with various SQL conditional statements like WHERE, GROUP BY, ORDER BY, etc.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   ![image](https://user-images.githubusercontent.com/67328331/195988661-e20f24e5-269c-4125-b420-547717a799a1.png)
 
