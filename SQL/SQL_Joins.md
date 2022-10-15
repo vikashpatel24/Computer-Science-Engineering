@@ -5,7 +5,7 @@ SQL Joins are mostly used when a user is trying to extricate data from multiple 
 
 # **Types of SQL Joins**
 
-1. # ** Cartesian / Cross Joins**
+1. **Cartesian / Cross Joins**
 
    &nbsp;The Cartesian Join also known as Cross Join is the cartesian product of all the rows of the first table with all the rows of the second table.
    ![image](https://user-images.githubusercontent.com/67328331/195988534-be52355d-c836-4af9-929f-9a69a3abc587.png)
@@ -20,13 +20,12 @@ SELECT is used to specify all columns we need to display in the resulting table.
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
     &nbsp;
 Let’s consider the scenario, where the first table contains customer details, i.e., customer id and customer name and the second table contains shopping details, i.e., product id and product name.Write a query to give the cartesian product of the Customers and Shopping_Details tables.<br><br>
-
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`SELECT *
 FROM Customers CROSS JOIN Shopping_Details;
 ` <br>
 
 
-2. **Self Join**
+#2. **Self Join**
 
   In SQL Self Join, a table is joined to itself. This means each row of the table is joined with itself and all other rows concerning stated conditions if any. In other words, we can say that it is a merge between two copies of the same table. This is extremely helpful when the foreign key references the primary key of the same table.
   ![image](https://user-images.githubusercontent.com/67328331/195988618-067f249b-8402-40d6-81e4-8f4faa14b310.png)
