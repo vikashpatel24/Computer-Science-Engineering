@@ -7,3 +7,6 @@
 - [Krishanu Chakraborty](krishanu_chakraborty.md) 
 - [Nandini Tiwari](nandini.md)
 - [Advait Manke](TGFlame.md)
+- [Chitrakshi Bohra](Chitrakshi2531.md)
+- [Handhika Yanuar Pratama](theDreamer911.md)
+- [Srishti Shukla](Srishti2128.md)
