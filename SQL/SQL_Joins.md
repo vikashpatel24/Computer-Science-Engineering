@@ -57,7 +57,7 @@ FROM table-1 INNER JOIN table-2
 WHERE table-1.column-name = table-2.column-name;
 ` <br>
 
- &nbsp;
+
 We can alternately use just the “JOIN” keyword instead of “INNER JOIN”.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
     &nbsp;
