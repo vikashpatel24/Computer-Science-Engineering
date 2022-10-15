@@ -24,26 +24,25 @@ FROM Customers CROSS JOIN Shopping_Details;
 ` <br>
 
 
-2. **ALTER**
+2. **Self Join**
 
-   Used to change the structure of the table
+  In SQL Self Join, a table is joined to itself. This means each row of the table is joined with itself and all other rows concerning stated conditions if any. In other words, we can say that it is a merge between two copies of the same table. This is extremely helpful when the foreign key references the primary key of the same table.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**:&nbsp;&nbsp;`SELECT a.column1 , b.column2
+FROM table_name a, table_name b
+WHERE some_condition;
 
-   - Add a new column <br><br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**: `ALTER TABLE TableName ADD ColumnName datatype(value)`<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ex**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALTER TABLE Student ADD age NUMBER(2)<br>
-   - Remove an existing column <br><br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**: `ALTER TABLE TableName DROP COLUMN ColumnName `<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ex**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALTER TABLE Student DROP COlUMN address<br>
+` <br>
+ &nbsp;
+Here we reference the same table with different names, i.e., a and b. This signifies a SELF JOIN.<br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
+    &nbsp;
+Let’s consider an employee table with employee id, name, phone number, and supervisor id. The supervisors are present in the employee table itself and hence, supervisor id acts like a foreign key which is also the primary key as it references the employee id.Write a query to get all the employees which are also supervisors of some other employees from the given employees table.<br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`SELECT a.Name AS Supervisors
+FROM Employees a, Employees b
+WHERE a.ID = b.supervisor_ID;
 
-   - Rename the existing column <br><br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**: `ALTER TABLE TableName RENAME COLUMN oldColumnName TO newColumnName`<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ex**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALTER TABLE Student RENAME COLUMN email TO emailid <br>
+` <br>
 
-   - Increase or decrease the column size <br><br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**: `ALTER TABLE TableName MODIFY ColumnName datatype(newValue)`<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ex**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALTER TABLE Student MODIFY emailid VARCHAR(30) <br>
-   - Change the column data type <br><br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**: `ALTER TABLE TableName MODIFY ColumnName datatype`<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ex**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALTER TABLE Student MODIFY DateofBirth year<br>
 
+ 
 3. **TRUNCATE**
