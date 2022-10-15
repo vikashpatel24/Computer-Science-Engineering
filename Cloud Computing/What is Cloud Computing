@@ -1,0 +1,101 @@
+What Is Cloud Computing?
+Cloud computing is the delivery of different services through the Internet. These resources include tools and applications like data storage, servers, databases, networking, and software.
+
+Rather than keeping files on a proprietary hard drive or local storage device, cloud-based storage makes it possible to save them to a remote database. As long as an electronic device has access to the web, it has access to the data and the software programs to run it.
+
+Cloud computing is a popular option for people and businesses for a number of reasons including cost savings, increased productivity, speed and efficiency, performance, and security.
+
+KEY TAKEAWAYS
+Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software.
+Cloud storage has grown increasingly popular among individuals who need larger storage space and for businesses seeking an efficient off-site data back-up solution.
+Cloud-based storage makes it possible to save files to a remote database and retrieve them on demand.
+Services can be both public and private—public services are provided online for a fee while private services are hosted on a network to specific clients.
+Cloud security has become an increasingly important field in IT.
+Understanding Cloud Computing
+Cloud computing is named as such because the information being accessed is found remotely in the cloud or a virtual space. Companies that provide cloud services enable users to store files and applications on remote servers and then access all the data via the Internet. This means the user is not required to be in a specific place to gain access to it, allowing the user to work remotely.
+
+Cloud computing takes all the heavy lifting involved in crunching and processing data away from the device you carry around or sit and work at. It also moves all of that work to huge computer clusters far away in cyberspace. The Internet becomes the cloud, and voilà—your data, work, and applications are available from any device with which you can connect to the Internet, anywhere in the world.
+
+Cloud computing can be both public and private. Public cloud services provide their services over the Internet for a fee. Private cloud services, on the other hand, only provide services to a certain number of people. These services are a system of networks that supply hosted services. There is also a hybrid option, which combines elements of both the public and private services.
+
+Types of Cloud Services
+Regardless of the kind of service, cloud computing services provide users with a series of functions including:
+
+Email
+Storage, backup, and data retrieval
+Creating and testing apps
+Analyzing data
+Audio and video streaming
+Delivering software on demand
+Cloud computing is still a fairly new service but is being used by a number of different organizations from big corporations to small businesses, nonprofits to government agencies, and even individual consumers.
+
+Deployment Models
+There are various types of clouds, each of which is different from the other. Public clouds provide their services on servers and storage on the Internet. These are operated by third-party companies, who handle and control all the hardware, software, and the general infrastructure. Clients access services through accounts that can be accessed by just about anyone.
+
+Private clouds are reserved for specific clientele, usually one business or organization. The firm's data service center may host the cloud computing service. Many private cloud computing services are provided on a private network.
+
+Hybrid clouds are, as the name implies, a combination of both public and private services. This type of model allows the user more flexibility and helps optimize the user's infrastructure and security.
+
+ Newer forms of cloud computing services include the community cloud, the big data cloud, and the multicloud.
+Types of Cloud Computing
+Cloud computing is not a single piece of technology like a microchip or a cellphone. Rather, it's a system primarily comprised of three services: software-as-a-service (SaaS), infrastructure-as-a-service (IaaS), and platform-as-a-service (PaaS).
+
+Software-as-a-service (SaaS) involves the licensure of a software application to customers. Licenses are typically provided through a pay-as-you-go model or on-demand. This type of system can be found in Microsoft Office's 365.
+1
+Infrastructure-as-a-service (IaaS) involves a method for delivering everything from operating systems to servers and storage through IP-based connectivity as part of an on-demand service. Clients can avoid the need to purchase software or servers, and instead procure these resources in an outsourced, on-demand service. Popular examples of the IaaS system include IBM Cloud and Microsoft Azure.
+1
+2
+Platform-as-a-service (PaaS) is considered the most complex of the three layers of cloud-based computing. PaaS shares some similarities with SaaS, the primary difference being that instead of delivering software online, it is actually a platform for creating software that is delivered via the Internet. This model includes platforms like Salesforce.com and Heroku.
+3
+ 
+4
+Advantages of Cloud Computing 
+Cloud-based software offers companies from all sectors a number of benefits, including the ability to use software from any device either via a native app or a browser. As a result, users can carry their files and settings over to other devices in a completely seamless manner.
+
+Cloud computing is far more than just accessing files on multiple devices. Thanks to cloud computing services, users can check their email on any computer and even store files using services such as Dropbox and Google Drive.
+5
+6
+ Cloud computing services also make it possible for users to back up their music, files, and photos, ensuring those files are immediately available in the event of a hard drive crash.
+
+It also offers big businesses huge cost-saving potential. Before the cloud became a viable alternative, companies were required to purchase, construct, and maintain costly information management technology and infrastructure. Companies can swap costly server centers and IT departments for fast Internet connections, where employees interact with the cloud online to complete their tasks.
+
+The cloud structure allows individuals to save storage space on their desktops or laptops. It also lets users upgrade software more quickly because software companies can offer their products via the web rather than through more traditional, tangible methods involving discs or flash drives. For example, Adobe customers can access applications in its Creative Cloud through an Internet-based subscription.
+7
+ This allows users to download new versions and fixes to their programs easily.
+
+Disadvantages of the Cloud
+With all of the speed, efficiencies, and innovations that come with cloud computing, there are, naturally, risks.
+
+Security has always been a big concern with the cloud especially when it comes to sensitive medical records and financial information. While regulations force cloud computing services to shore up their security and compliance measures, it remains an ongoing issue. Encryption protects vital information, but if that encryption key is lost, the data disappears.
+
+Servers maintained by cloud computing companies may fall victim to natural disasters, internal bugs, and power outages, too. The geographical reach of cloud computing cuts both ways: A blackout in California could paralyze users in New York, and a firm in Texas could lose its data if something causes its Maine-based provider to crash.
+
+As with any technology, there is a learning curve for both employees and managers. But with many individuals accessing and manipulating information through a single portal, inadvertent mistakes can transfer across an entire system.
+
+The World of Business
+Businesses can employ cloud computing in different ways. Some users maintain all apps and data on the cloud, while others use a hybrid model, keeping certain apps and data on private servers and others on the cloud.
+
+When it comes to providing services, the big players in the corporate computing sphere include:
+
+Google Cloud
+Amazon Web Services (AWS)
+Microsoft Azure
+IBM Cloud
+Alibaba Cloud
+Amazon Web Services is 100% public and includes a pay-as-you-go, outsourced model.
+8
+ Once you’re on the platform you can sign up for apps and additional services. Microsoft Azure allows clients to keep some data at their own sites. Meanwhile, Alibaba Cloud is a subsidiary of the Alibaba Group.
+9
+
+What Is an Example of Cloud Computing?
+Today, there are several examples of cloud computing applications used by both businesses and individuals. One type of cloud service would be streaming platforms for audio or video, where the actual media files are stored remotely. Another would be data storage platforms like Google Drive, Dropbox, OneDrive, or Box.
+
+What Are the Main Types of Cloud Computing?
+The main types of cloud computing services include Infrastructure-as-a-Service (IaaS), Platforms-as-a-Service (PaaS), and Software-as-a-Service (SaaS).
+10
+
+IaaS provides IT infrastructure to end-users via the internet and is commonly associated with serverless computing.
+PaaS serves both software and hardware to end-users, who are generally software developers. PaaS allows the user to develop, run, and manage their own apps without having to build and maintain the infrastructure.
+SaaS is a software licensing model, which allows access to software on a subscription basis using external servers without having to download and install them locally.
+Is Cloud Computing Safe?
+Because software and data are stored remotely in cloud computing, data security and platform security are a big concern. Cloud security refers to the measures undertaken to protect digital assets and data stored on cloud-based services. Measures to protect this data include two-factor authorization (2FA), the use of VPNs, security tokens, data encryption, and firewall services, among others.
