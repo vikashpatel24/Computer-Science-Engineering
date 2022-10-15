@@ -11,8 +11,7 @@ SQL Joins are mostly used when a user is trying to extricate data from multiple 
 
 Let’s say if we have m rows in the first table and n rows in the second table, then the resulting cartesian join table will have m*n rows. This usually happens when the matching column or WHERE condition is not specified.<br><br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**:&nbsp;&nbsp;`SELECT column-name(s)
-FROM table1 CROSS JOIN table2;
-` <br>
+FROM table1 CROSS JOIN table2;` <br>
  &nbsp;
 SELECT is used to specify all columns we need to display in the resulting table. FROM specifies the tables where we need to look for these columns. The type of join, i.e., CROSS JOIN in this case, is placed between the two tables we wish to join.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
@@ -29,18 +28,15 @@ FROM Customers CROSS JOIN Shopping_Details;
   In SQL Self Join, a table is joined to itself. This means each row of the table is joined with itself and all other rows concerning stated conditions if any. In other words, we can say that it is a merge between two copies of the same table. This is extremely helpful when the foreign key references the primary key of the same table.
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Syntax**:&nbsp;&nbsp;`SELECT a.column1 , b.column2
 FROM table_name a, table_name b
-WHERE some_condition;
-
-` <br>
+WHERE some_condition;` <br>
+ 
  &nbsp;
 Here we reference the same table with different names, i.e., a and b. This signifies a SELF JOIN.<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp;
-    &nbsp;
-Let’s consider an employee table with employee id, name, phone number, and supervisor id. The supervisors are present in the employee table itself and hence, supervisor id acts like a foreign key which is also the primary key as it references the employee id.Write a query to get all the employees which are also supervisors of some other employees from the given employees table.<br><br>
+    &nbsp;Let’s consider an employee table with employee id, name, phone number, and supervisor id. The supervisors are present in the employee table itself and hence, supervisor id acts like a foreign key which is also the primary key as it references the employee id.Write a query to get all the employees which are also supervisors of some other employees from the given employees table.<br><br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`SELECT a.Name AS Supervisors
 FROM Employees a, Employees b
 WHERE a.ID = b.supervisor_ID;
-
 ` <br>
 
 
