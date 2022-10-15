@@ -47,7 +47,7 @@ WHERE a.ID = b.supervisor_ID;
 
 
  
-3. **Inner / Equi Join**
+# 3. **Inner / Equi Join**
 
 SQL Inner Join or Equi Join is the most simple join where all rows from the intended tables are cached together if they meet the stated condition. Two or more tables are required for this join. Inner Join can be used with various SQL conditional statements like WHERE, GROUP BY, ORDER BY, etc.
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -91,14 +91,14 @@ FROM Customers NATURAL JOIN Shopping_Details;
 **
 
 
-4.**Outer Joins**
+# 4.**Outer Joins**
 SQL Outer joins give both matched and unmatched rows of data depending on the type of outer joins. These types are outer joins are sub-divided into the following types:
 
 (i)Left Outer Join
 (ii)Right Outer Join
 (iii)Full Outer Join
 
-(i)**Left Outer Join**
+# (i)**Left Outer Join**
 
 In this join a.k.a. SQL Left Join, all the rows of the left-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the right-hand table are added.
 
@@ -124,7 +124,7 @@ ON Customers.ID = Shopping_Details.ID;
 **
 ` <br>
 
-(ii) **Right Outer Join**
+# (ii) **Right Outer Join**
 
 Similar to the left outer join, in the case of the Right Outer Join a.k.a. SQL Right Join, all the rows on the right-hand table, regardless of following the stated conditions are added to the output table. Whereas, only matching rows of the left-hand table are added.
 
@@ -152,7 +152,7 @@ ON Customers.ID = Shopping_Details.ID;
 **
 ` <br>
 
-(iii) **Full Outer Join**
+# (iii) **Full Outer Join**
 
 The full outer join (a.k.a. SQL Full Join) firstly adds all the rows matching to the stated condition in the query and then adds the remaining unmatched rows from both the tables. We need two or more tables for the join.
 ![image](https://user-images.githubusercontent.com/67328331/195989018-5fe93d89-0c52-4883-a802-19692f07212a.png)
