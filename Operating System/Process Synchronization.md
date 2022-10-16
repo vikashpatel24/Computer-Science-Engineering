@@ -66,23 +66,19 @@ int Turn: A integer variable Turn indicates the process number which is ready to
 ![Screenshot (245)](https://user-images.githubusercontent.com/67328331/196027795-d54e0941-b6df-456e-ad50-c945b1735f66.png)
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   **Code**:&nbsp;&nbsp;
-    `do{
-        //A process Pi wants to enter into the critical section
-        //The ith index of flag is set
+   **Syntax**:&nbsp;&nbsp;`do{
         Flag[i] = True;
         Turn = i;
         while(Flag[i] && Turn == i);
         { Critical Section };
-        
         Flag[i] = False;
         // another process can go to Critical Section
         Turn = j;
-        
             Remainder Section
-            
-    }  while ( True);
-` <br>
+    }  while ( True);`<br>
+
+      
+        
 
   
            
@@ -123,12 +119,12 @@ If yes, the process can then proceed to access the resource, which involves redu
 When the process completes its critical section code, it can increase the value of the counting semaphore, making way for some other process to access it.
 The snippet code for semaphore would seem something like this:<br>
 
-**Syntax**:&nbsp;&nbsp;`WAIT ( SE );<br>
-while ( SE <= 0 );<br>
-SE = SE - 1;<br>
-SIGNAL ( SE );<br>
+**Syntax**:&nbsp;&nbsp;`WAIT ( SE );
+while ( SE <= 0 );
+SE = SE - 1;
+SIGNAL ( SE );
 SE = SE + 1;
-` <br>
+`<br>
 
 We use the functions WAIT() and SIGNAL() to control the semaphore.
 
