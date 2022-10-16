@@ -19,10 +19,10 @@ Let us take a look at why exactly we need Process Synchronization. For example, 
 
 Let us look at different elements/sections of a program:
 
-**Entry Section**: The entry Section decides the entry of a process.
-**Critical Section**: Critical section allows and makes sure that only one process is modifying the shared data.
-**Exit Section**: The entry of other processes in the shared data after the execution of one process is handled by the Exit section.
-**Remainder Section**: The remaining part of the code which is not categorized as above is contained in the Remainder section.
+**Entry Section**: The entry Section decides the entry of a process.<br>
+**Critical Section**: Critical section allows and makes sure that only one process is modifying the shared data.<br>
+**Exit Section**: The entry of other processes in the shared data after the execution of one process is handled by the Exit section.<br>
+**Remainder Section**: The remaining part of the code which is not categorized as above is contained in the Remainder section.<br>
 
 # Race Condition
 
@@ -45,16 +45,16 @@ We'll look at some solutions to Critical Section Problem but before we move on t
 
 The following three requirements must be met by a solution to the critical section problem:
 
-Mutual exclusion: If a process is running in the critical section, no other process should be allowed to run in that section at that time.
-Progress: If no process is still in the critical section and other processes are waiting outside the critical section to execute, then any one of the threads must be permitted to enter the critical section. The decision of which process will enter the critical section will be taken by only those processes that are not executing in the remaining section.
-No starvation: Starvation means a process keeps waiting forever to access the critical section but never gets a chance. No starvation is also known as Bounded Waiting.
-A process should not wait forever to enter inside the critical section.
-When a process submits a request to access its critical section, there should be a limit or bound, which is the number of other processes that are allowed to access the critical section before it.
-After this bound is reached, this process should be allowed to access the critical section.
+**Mutual exclusion**: If a process is running in the critical section, no other process should be allowed to run in that section at that time.<br>
+**Progress**: If no process is still in the critical section and other processes are waiting outside the critical section to execute, then any one of the threads must be permitted to enter the critical section. The decision of which process will enter the critical section will be taken by only those processes that are not executing in the remaining section.<br>
+**No starvation**: Starvation means a process keeps waiting forever to access the critical section but never gets a chance. No starvation is also known as Bounded Waiting.<br>
+A process should not wait forever to enter inside the critical section.<br>
+When a process submits a request to access its critical section, there should be a limit or bound, which is the number of other processes that are allowed to access the critical section before it.<br>
+After this bound is reached, this process should be allowed to access the critical section.****
 
 # Solutions To The Critical Section Problem
 
-**Peterson's solution**
+# **Peterson's solution**
 Peterson's approach to critical section problems is extensively utilized. It is a classical software-based solution.
 
 The solution is based on the idea that when a process is executing in a critical section, then the other process executes the rest of the code and vice-versa is also possible, i.e., this solution makes sure that only one process executes the critical section at any point in time.
@@ -66,8 +66,7 @@ int Turn: A integer variable Turn indicates the process number which is ready to
 ![Screenshot (245)](https://user-images.githubusercontent.com/67328331/196027795-d54e0941-b6df-456e-ad50-c945b1735f66.png)
 
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`
-    do{
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`do{
         //A process Pi wants to enter into the critical section
         
         //The ith index of flag is set
@@ -88,8 +87,8 @@ int Turn: A integer variable Turn indicates the process number which is ready to
 
 Let us look at some disadvantages of Peterson's solution are:
 
-The Peterson's solution involves Busy waiting
-The solution is also limited to only 2 processes.
+1.The Peterson's solution involves Busy waiting<br>
+2.The solution is also limited to only 2 processes.<br>
 
 # Synchronization Hardware
 Hardware can occasionally assist in the solving of critical section issues. Some operating systems provide a lock feature.
