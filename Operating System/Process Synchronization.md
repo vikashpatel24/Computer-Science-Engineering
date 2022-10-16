@@ -129,17 +129,17 @@ We use the functions WAIT() and SIGNAL() to control the semaphore.
 
 
 # Conclusion
-Synchronization is the effort of executing processes such that no two processes have access to the same shared data.<br>
+Synchronization is the effort of executing processes such that no two processes have access to the same shared data.<br><br>
 Four elements of program/data are:<br>
 - **Entry section** <br>
 - **Critical section** <br>
 - **Exit section** <br>
 - **Reminder section**<br><br>
-The critical section is a portion of code that a single process can access at a specified moment in time.<br>
+The critical section is a portion of code that a single process can access at a specified moment in time.<br><br>
 Three essential rules that any critical section solution must follow are as follows:<br>
 - **Mutual Exclusion**<br>
 - **Progress**<br>
-- **No Starvation(Bounded waiting)**<br>
+- **No Starvation(Bounded waiting)**<br><br>
 Solutions to critical section problem are:<br>
 - **Peterson's solution**<br>
 - **Synchronization hardware**<br>
