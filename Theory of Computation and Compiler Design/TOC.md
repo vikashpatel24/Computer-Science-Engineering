@@ -1,12 +1,12 @@
-﻿Theory of Computation 
+<h1>﻿Theory of Computation </h1>
 
-Introduction of Theory of Computation 
+<h2>Introduction of Theory of Computation </h2>
 
 **Automata** theory (also known as **Theory Of Computation**) is a theoretical branch of Computer Science and Mathematics, which mainly deals with the logic of computation with respect to simple machines, referred to as automata.  Automata\*  enables  scientists  to  understand  how  machines  compute  the functions  and  solve  problems.  The  main  motivation  behind  developing Automata  Theory  was  to  develop  methods  to  describe  and  analyze  the dynamic behavior of discrete systems.  
 
 Automata originated from the word “Automaton” which is closely related to “Automation”. 
 
-Basic Terminologies of Theory of Computation: 
+<h2> Basic Terminologies of Theory of Computation:</h2> 
 
 Now,  let’s  understand  the  basic  terminologies,  which  are  important  and frequently used in the Theory of Computation.  
 
@@ -46,7 +46,7 @@ zero occurrence of symbols,  represented as ε.
 
 Length of String |w| = 2 Number of Strings = 4 
 
-**Conclusion:** 
+<h2> Conclusion:</h2>
 
 For alphabet {a, b} with length **n**, number of  
 
@@ -90,7 +90,7 @@ Kleene  Star  is  also  called  a ***“Kleene  Operator”*** or ***“Kleene  
 
 Please note that we can include ε string also in given Kleene star representation.) 
 
-Language:  
+<h2> Language:  </h2>
 
 A  language  is  a *set  of  strings*,  chosen  from  some  Σ\*  or  we  can  say- **‘**A language is a subset of Σ\* **‘**. A language that can be formed over ‘ Σ ‘ can be **Finite** or **Infinite**. 
 
