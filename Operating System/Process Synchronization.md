@@ -6,6 +6,8 @@ An operating system is a software that manages all applications on a device and 
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example :**:&nbsp; consider a bank that stores the account balance of each customer in the same database. Now suppose you initially have x rupees in your account. Now, you take out some amount of money from your bank account, and at the same time, someone tries to look at the amount of money stored in your account. As you are taking out some money from your account, after the transaction, the total balance left will be lower than x. But, the transaction takes time, and hence the person reads x as your account balance which leads to inconsistent data. If in some way, we could make sure that only one process occurs at a time, we could ensure consistent data.
  
+ ![Screenshot (243)](https://user-images.githubusercontent.com/67328331/196027669-60938e00-aabd-4488-9b66-ce74dbacf15f.png)
+
  In the above image, if Process1 and Process2 happen at the same time, user 2 will get the wrong account balance as Y because of Process1 being transacted when the balance is X.
 
 Inconsistency of data can occur when various processes share a common resource in a system which is why there is a need for process synchronization in the operating system.
@@ -13,6 +15,8 @@ Inconsistency of data can occur when various processes share a common resource i
 # How Process Synchronization in OS Works?
 
 Let us take a look at why exactly we need Process Synchronization. For example, If a process1 is trying to read the data present in a memory location while another process2 is trying to change the data present at the same location, there is a high chance that the data read by the process1 will be incorrect.
+![Screenshot (244)](https://user-images.githubusercontent.com/67328331/196027725-297abf30-d3bf-46a9-8e45-d756a0b51988.png)
+
 Let us look at different elements/sections of a program:
 
 **Entry Section**: The entry Section decides the entry of a process.
@@ -59,6 +63,8 @@ In Peterson's solution, we have two shared variables that are used by the proces
 
 A boolean Flag[]: A boolean array Flag which is initialized to FALSE. This Flag array represents which process is which process wants to enter into the critical solution.
 int Turn: A integer variable Turn indicates the process number which is ready to enter into the critical section.
+![Screenshot (245)](https://user-images.githubusercontent.com/67328331/196027795-d54e0941-b6df-456e-ad50-c945b1735f66.png)
+
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`
     do{
