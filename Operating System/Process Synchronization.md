@@ -65,8 +65,8 @@ A boolean Flag[]: A boolean array Flag which is initialized to FALSE. This Flag 
 int Turn: A integer variable Turn indicates the process number which is ready to enter into the critical section.
 ![Screenshot (245)](https://user-images.githubusercontent.com/67328331/196027795-d54e0941-b6df-456e-ad50-c945b1735f66.png)
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   **Syntax**:&nbsp;&nbsp;`do{
+ ```
+ do{
         Flag[i] = True;
         Turn = i;
         while(Flag[i] && Turn == i);
@@ -75,7 +75,8 @@ int Turn: A integer variable Turn indicates the process number which is ready to
         // another process can go to Critical Section
         Turn = j;
             Remainder Section
-    }  while ( True);`<br>
+    }  while ( True);
+    ```
 
       
         
@@ -119,12 +120,12 @@ If yes, the process can then proceed to access the resource, which involves redu
 When the process completes its critical section code, it can increase the value of the counting semaphore, making way for some other process to access it.
 The snippet code for semaphore would seem something like this:<br>
 
-**Syntax**:&nbsp;&nbsp;`WAIT ( SE );
+```&nbsp;&nbsp;`WAIT ( SE );
 while ( SE <= 0 );
 SE = SE - 1;
 SIGNAL ( SE );
 SE = SE + 1;
-`<br>
+```
 
 We use the functions WAIT() and SIGNAL() to control the semaphore.
 
