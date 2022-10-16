@@ -65,14 +65,15 @@ A boolean Flag[]: A boolean array Flag which is initialized to FALSE. This Flag 
 int Turn: A integer variable Turn indicates the process number which is ready to enter into the critical section.
 ![Screenshot (245)](https://user-images.githubusercontent.com/67328331/196027795-d54e0941-b6df-456e-ad50-c945b1735f66.png)
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   **Syntax**:&nbsp;&nbsp;`do{
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   **Syntax**:&nbsp;&nbsp;`
+    do{
         //A process Pi wants to enter into the critical section
+        
         //The ith index of flag is set
         Flag[i] = True;
         Turn = i;
         while(Flag[i] && Turn == i);
-        
         { Critical Section };
         
         Flag[i] = False;
@@ -81,8 +82,11 @@ int Turn: A integer variable Turn indicates the process number which is ready to
         
             Remainder Section
             
-    }  while ( True);` <br>
+    }  while ( True);
+` <br>
 
+  
+           
 
 Let us look at some disadvantages of Peterson's solution are:
 
@@ -118,7 +122,8 @@ Initially, the counting semaphores are set to the maximum amount of processes th
 When a process wants to use that resource, it first checks to see if the value of the counting semaphore is more than zero.
 If yes, the process can then proceed to access the resource, which involves reducing the value of the counting semaphore by one.
 When the process completes its critical section code, it can increase the value of the counting semaphore, making way for some other process to access it.
-The snippet code for semaphore would seem something like this:
+The snippet code for semaphore would seem something like this:<br>
+
 **Syntax**:&nbsp;&nbsp;`WAIT ( SE );
 while ( SE <= 0 );
 SE = SE - 1;
