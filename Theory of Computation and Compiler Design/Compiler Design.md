@@ -1,4 +1,4 @@
-﻿Compiler Design 
+<h1>﻿Compiler Design </h1>
 
 A compiler translates the code written in one language to some other language without changing the meaning of the program. It is also expected that a compiler should make the target code efficient and optimized in terms of time and space. 
 
@@ -25,7 +25,7 @@ A translator or language processor is a program that translates an input program
 - **Relocatable Machine Code:** It can be loaded at any point and can be run. The address within the program will be in such a way that it will cooperate with the program movement. 
 - **Loader/Linker:** It converts the relocatable code into absolute code and tries to run the program resulting in a running program or an error message (or sometimes both can happen). Linker loads a variety of object files into a single file to make it executable. Then loader loads it in memory and executes it. 
 
-**Phases of a Compiler:** 
+<h3> **Phases of a Compiler:** </h3>
 
 There are two major phases of compilation, which in turn have many parts. Each of them takes input from the output of the previous level and works in a coordinated way.  
 
