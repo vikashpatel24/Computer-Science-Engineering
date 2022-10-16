@@ -14,7 +14,7 @@ Inconsistency of data can occur when various processes share a common resource i
 
 # How Process Synchronization in OS Works?
 
-Let us take a look at why exactly we need Process Synchronization. For example, If a process1 is trying to read the data present in a memory location while another process2 is trying to change the data present at the same location, there is a high chance that the data read by the process1 will be incorrect.
+&nbsp;Let us take a look at why exactly we need Process Synchronization. For example, If a process1 is trying to read the data present in a memory location while another process2 is trying to change the data present at the same location, there is a high chance that the data read by the process1 will be incorrect.<br><br>
 ![Screenshot (244)](https://user-images.githubusercontent.com/67328331/196027725-297abf30-d3bf-46a9-8e45-d756a0b51988.png)
 
 Let us look at different elements/sections of a program:
@@ -66,9 +66,8 @@ int Turn: A integer variable Turn indicates the process number which is ready to
 ![Screenshot (245)](https://user-images.githubusercontent.com/67328331/196027795-d54e0941-b6df-456e-ad50-c945b1735f66.png)
 
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`do{
+&nbsp;`do{
         //A process Pi wants to enter into the critical section
-        
         //The ith index of flag is set
         Flag[i] = True;
         Turn = i;
@@ -119,10 +118,10 @@ Initially, the counting semaphores are set to the maximum amount of processes th
 When a process wants to use that resource, it first checks to see if the value of the counting semaphore is more than zero.
 If yes, the process can then proceed to access the resource, which involves reducing the value of the counting semaphore by one.
 When the process completes its critical section code, it can increase the value of the counting semaphore, making way for some other process to access it.
-The snippet code for semaphore would seem something like this: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`WAIT ( SE );
-while ( SE <= 0 );
-SE = SE - 1;
-SIGNAL ( SE );
+The snippet code for semaphore would seem something like this: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Query**:&nbsp;&nbsp;`WAIT ( SE );<br>
+while ( SE <= 0 );<br>
+SE = SE - 1;<br>
+SIGNAL ( SE );<br>
 SE = SE + 1;
 ` <br>
 We use the functions WAIT() and SIGNAL() to control the semaphore.
@@ -131,19 +130,19 @@ We use the functions WAIT() and SIGNAL() to control the semaphore.
 
 
 # Conclusion
-Synchronization is the effort of executing processes such that no two processes have access to the same shared data.
-Four elements of program/data are:
-Entry section
-Critical section
-Exit section
-Reminder section
-The critical section is a portion of code that a single process can access at a specified moment in time.
-Three essential rules that any critical section solution must follow are as follows:
-Mutual Exclusion
-Progress
-No Starvation(Bounded waiting)
-Solutions to critical section problem are:
-Peterson's solution
-Synchronization hardware
-Mutex Locks
-Semaphore
+Synchronization is the effort of executing processes such that no two processes have access to the same shared data.<br>
+Four elements of program/data are:<br>
+Entry section<br>
+Critical section<br>
+Exit section<br>
+Reminder section<br><br>
+The critical section is a portion of code that a single process can access at a specified moment in time.<br>
+Three essential rules that any critical section solution must follow are as follows:<br>
+Mutual Exclusion<br>
+Progress<br>
+No Starvation(Bounded waiting)<br>
+Solutions to critical section problem are:<br>
+Peterson's solution<br>
+Synchronization hardware<br>
+Mutex Locks<br>
+Semaphore<br>
