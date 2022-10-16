@@ -176,3 +176,55 @@ A session basically allows you to remember information from one request to anoth
 
 40)	Is Flask an MVC model and if yes give an example showing MVC pattern for your application?
 Basically, Flask is a minimalistic framework which behaves same as MVC framework. So MVC is a perfect fit for Flask, and the pattern for MVC we will consider for the following example
+
+
+41) What is PYTHONPATH?
+PYTHONPATH has a role similar to PATH. This variable tells Python Interpreter where to locate the module files imported into a program. It should include the Python source library directory and the directories containing Python source code.
+PYTHONPATH is sometimes preset by Python Installer.
+
+
+42) What are python namespaces?
+A Python namespace ensures that object names in a program are unique and can be used without any conflict. Python implements these namespaces as dictionaries with ‘name as key’ mapped to its respective ‘object as value’.
+Let’s explore some examples of namespaces:
+Local Namespace consists of local names inside a function. It is temporarily created for a function call and gets cleared once the function returns.
+Global Namespace consists of names from various imported modules/packages that are being used in the ongoing project. It is created once the package is imported into the script and survives till the execution of the script.
+Built-in Namespace consists of built-in functions of core Python and dedicated built-in names for various types of exceptions.
+
+
+43) What is scope resolution?
+A scope is a block of code where an object in Python remains relevant.Each and every object of python functions within its respective scope.As Namespaces uniquely identify all the objects inside a program but these namespaces also have a scope defined for them where you could use their objects without any prefix. It defines the accessibility and the lifetime of a variable.
+Let’s have a look on scope created as the time of code execution:
+A local scope refers to the local objects included in the current function.
+A global scope refers to the objects that are available throughout execution of the code.
+A module-level scope refers to the global objects that are associated with the current module in the program.
+An outermost scope refers to all the available built-in names callable in the program.
+
+
+44) Explain all file processing modes supported in Python?
+Python has various file processing modes.
+
+For opening files, there are three modes:
+
+read-only mode (r)
+write-only mode (w)
+read–write mode (rw)
+For opening a text file using the above modes, we will have to append ‘t’ with them as follows:
+
+read-only mode (rt)
+write-only mode (wt)
+read–write mode (rwt)
+Similarly, a binary file can be opened by appending ‘b’ with them as follows:
+
+read-only mode (rb)
+write-only mode (wb)
+read–write mode (rwb)
+To append the content in the files, we can use the append mode (a):
+
+For text files, the mode would be ‘at’
+For binary files, it would be ‘ab’
+
+
+45) Whenever Python exits, why isn’t all the memory de-allocated?
+Whenever Python exits, especially those Python modules which are having circular references to other objects or the objects that are referenced from the global namespaces are not always de-allocated or freed.
+It is not possible to de-allocate those portions of memory that are reserved by the C library.
+On exit, because of having its own efficient clean up mechanism, Python would try to de-allocate every object.
