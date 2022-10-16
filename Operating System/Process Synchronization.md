@@ -76,13 +76,8 @@ int Turn: A integer variable Turn indicates the process number which is ready to
         Turn = j;
             Remainder Section
     }  while ( True);
-    ```
-
-      
-        
-
-  
-           
+    
+ ```     
 
 Let us look at some disadvantages of Peterson's solution are:
 
@@ -120,7 +115,8 @@ If yes, the process can then proceed to access the resource, which involves redu
 When the process completes its critical section code, it can increase the value of the counting semaphore, making way for some other process to access it.
 The snippet code for semaphore would seem something like this:<br>
 
-```&nbsp;&nbsp;`WAIT ( SE );
+```
+WAIT ( SE );
 while ( SE <= 0 );
 SE = SE - 1;
 SIGNAL ( SE );
