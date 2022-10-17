@@ -1,0 +1,93 @@
+Section 1. Fundamentals
+Syntax – introduce you to the basic Python programming syntax.
+Variables – explain to you what variables are and how to create concise and meaningful variables.
+Strings – learn about string data and some basic string operations.
+Numbers – introduce to you the commonly-used number types including integers and floating-point numbers.
+Booleans – explain the Boolean data type, falsy and truthy values in Python.
+Constants – show you how to define constants in Python.
+Comments – learn how to make notes in your code.
+Type conversion – learn how to convert a value of one type to another e.g., converting a string to a number.
+Section 2. Operators
+Comparison operators – introduce you to the comparison operators and how to use them to compare two values.
+Logical operators – show you how to use logical operators to combine multiple conditions.
+Section 3. Control flow
+if…else statement – learn how to execute a code block based on a condition.
+Ternary operator – introduce you to the Python ternary operator that makes your code more concise.
+for loop with range() – show you how to execute a code block for a fixed number of times by using the for loop with range() function.
+while– show you how to execute a code block as long as a condition is True.
+break – learn how to exit a loop prematurely.
+continue – show you how to skip the current loop iteration and start the next one.
+pass – show you how to use the pass statement as a placeholder.
+Section 4. Functions
+Python functions – introduce you to functions in Python, and how to define functions, and reuse them in the program.
+Default parameters – show you how to specify the default values for function parameters.
+Keyword arguments – learn how to use the keyword arguments to make the function call more obvious.
+Recursive functions – learn how to define recursive functions in Python.
+Lambda Expressions – show you how to define anonymous functions in Python using lambda expressions.
+Docstrings – show you how to use docstrings to document a function.
+Section 5. Lists
+List – introduce you to the list type and how to manipulate list elements effectively.
+Tuple – introduce you to the tuple which is a list that doesn’t change throughout the program.
+Sort a list in place – show you how to use the sort() method to sort a list in place.
+Sort a List – learn how to use the sorted() function to return a new sorted list from the original list.
+Slice a List – show you how to use the list slicing technique to manipulate lists effectively.
+Unpack a list – show you how to assign list elements to multiple variables using list unpacking.
+Iterate over a List – learn how to use a for loop to iterate over a list.
+Find the index of an element – show you how to find the index of the first occurrence of an element in a list.
+Iterables – explain to you iterables, and the difference between an iterable and an iterator.
+Transform list elements with map() – show you how to use the map() function to transform list elements.
+Filter list elements with filter() – use the filter() function to filter list elements.
+Reduce list elements into a value with reduce() – use the reduce() function to reduce list elements into a single value.
+List comprehensions – show you how to create a new list based on an existing list.
+Section 6. Dictionaries
+Dictionary – introduce you to the dictionary type.
+Dictionary comprehension – show you how to use dictionary comprehension to create a new dictionary from an existing one.
+Section 7. Sets
+Set – explain to you the Set type and show you how to manipulate set elements effectively.
+Set comprehension – explain to you the set comprehension so that you can create a new set based on an existing set with a more concise and elegant syntax.
+Union of Sets – show you how to union two or more sets using the union() method or set union operator (&).
+Intersection of Sets – show you how to intersect two or more sets using the intersection() method or set intersection operator (|).
+Difference of sets – learn how to find the difference between sets using the set difference() method or set difference operator (-)
+Symmetric Difference of sets – guide you on how to find the symmetric difference of sets using the symmetric_difference() method or the symmetric difference operator (^).
+Subset – check if a set is a subset of another set.
+Superset – check if a set is a superset of another set.
+Disjoint sets – check if two sets are disjoint.
+Section 8. Exception handling
+try…except – show you how to handle exceptions more gracefully using the try…except statement.
+try…except…finally – learn how to execute a code block whether an exception occurs or not.
+try…except…else – explain to you how to use the try…except…else statement to control the follow of the program in case of exceptions.
+Section 9. More on Python Loops
+for…else – explain to you the for else statement.
+while…else – discuss the while else statement.
+do…while loop emulation – show you how to emulate the do…while loop in Python by using the while loop statement.
+Section 10. More on Python functions
+Unpacking tuples – show you how to unpack a tuple that assigns individual elements of a tuple to multiple variables.
+*args Parameters – learn how to pass a variable number of arguments to a function.
+**kwargs Parameters – show you how to pass a variable number of keyword arguments to a function.
+Partial functions – learn how to define partial functions.
+Type hints – show you how to add type hints to the parameters of a function and how to use the static type checker (mypy) to check the type statically.
+Section 11. Modules & Packages
+Modules – introduce you to the Python modules and show you how to write your own modules.
+Module search path – explain to you how the Python module search path works when you import a module.
+__name__ variable – show you how to use the __name__ variable to control the execution of a Python file as a script or as a module.
+Packages – learn how to use packages to organize modules in more structured ways.
+Section 12. Working with files
+Read from a text file – learn how to read from a text file.
+Write to a text file – show you how to write to a text file.
+Create a new text file – walk you through the steps of creating a new text file.
+Check if a file exists – show you how to check if a file exists.
+Read CSV files – show you how to read data from a CSV file using the csv module.
+Write CSV files – learn how to write data to a CSV file using the csv module.
+Rename a file – guide you on how to rename a file.
+Delete a file – show you how to delete a file.
+Section 13. Working Directories
+Working with directories – show you commonly used functions to work with directories.
+List files in a Directory – list files in a directory.
+Section 14. Third-party Packages, PIP, and Virtual Environments
+Python Package Index (PyPI) and pip – introduce you to the Python package index and how to install third-party packages using pip.
+Virtual Environments – understand Python virtual environments and more importantly, why you need them.
+Install pipenv on Windows – show you how to install the pipenv tool on Windows.
+Section 15. Strings
+F-strings – learn how to use the f-strings to format text strings in a clear syntax.
+Raw strings – use raw strings to handle strings that contain the backslashes.
+Backslash – explain how Python uses the backslashes (\) in string literals.
