@@ -22,7 +22,7 @@ Web Development
 * Create Folder in this repo and Add relevant topic you wanted to contribute.
 * Will be creating website based on your contributed materials and your profile will be linked with the contributed topic.
 * Add your linkedin profile using the following format:
-    - Create a folder using your github username with extension .md and add it into contributors profile folder.
+    - Create a file using your github username with extension .md and add it into contributors profile folder.
           Example : its-red-eagle.md
          - In markdown file write:
             - Your name  
@@ -56,6 +56,7 @@ Web Development
 - [Data Structures & Algorithms]()
    - [Rabin-Karp String Matching Algorithm](Data%20Structures%20and%20Algorithms/Rabin-Karp-String-Matching-Algo.md)
    - [Sliding Window Algorithm](Data%20Structures%20and%20Algorithms/Sliding-Window-Algo.md)
+   - [Tim Sort Algorithm](Data%20Structures%20and%20Algorithms/Tim-Sort.md)
 - [Python](Python/python.md) 
 - [Machine Learning]()
    - [Machine Learning](Machine%20Learning/deep-learning.md)
