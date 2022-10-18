@@ -8,7 +8,8 @@ Internet
 DBMS  
 Cloud  
 Computing  
-Programming Languages  
+Programming Languages 
+Python Projects for beginners
 Software Engineering  
 Algorithms  
 Object Oriented Programming  
@@ -73,7 +74,7 @@ Web Development
 - [SQL]()
    - [Introduction](SQL/Introduction.md)
    - [Commands](SQL/Commands.md)
-- [Python](Python/python.md)
+- [Python](Python/basic python projects/python.md)
 - [Programming Languages]()
    - [Introduction](Programming%20Languages/introduction.md)
    - [Types](Programming%20Languages/Types.md)

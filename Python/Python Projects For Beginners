@@ -1,0 +1,92 @@
+1. QR Code Generation using Python
+
+QR code stands for Quick Response Code. QR codes may look simple but they are capable of storing lots of data. Irrespective of how much data they contain when scanned QR code allows the user to access information instantly. That is why they are called Quick Response Code.
+
+These are being used in many scenarios these days. It first appeared in Japan in 1994. QR codes can be used to store(encode) lots of data and that too of various types. For example, they can be used to encode:
+
+Contact details
+Facebook ids, Instagram ids, Twitter ids, WhatsApp ids, and more.
+Event Details
+Youtube links
+Product details
+Link directly to download an app on the Apple App Store or Google Play.
+They are also being used in doing digital transactions by simply scanning QR codes.
+Access Wi-Fi by storing encryption details such as SSID, password, and encryption type.
+
+2. GUI application for Calendar with Python using Tkinter
+
+In Python, we can make GUIs using Tkinter. If you are very imaginative and creative you can do amazing stuff with Tkinter. Here, we will make a Python Calendar GUI application using Tkinter. In this app, the user has to enter the year for which he wants to view the calendar, and then the calendar will appear.
+
+Install Tkinter first using this command: pip install tk
+
+We would also need a Calendar package, but we don’t have to install it. It is a default package that automatically comes with python.
+
+#import calendar module
+import calendar
+#import tkinter module
+from tkinter import *
+
+#This function displays calendar for a given year
+def showCalender():
+    gui = Tk()
+    gui.config(background='grey')
+    gui.title("Calender for the year")
+    gui.geometry("550x600")
+    year = int(year_field.get())
+    gui_content= calendar.calendar(year)
+    calYear = Label(gui, text= gui_content, font= "Consolas 10 bold")
+    calYear.grid(row=5, column=1,padx=20)
+    gui.mainloop()
+    
+    
+#Driver code
+if __name__=='__main__':
+    new = Tk()
+    new.config(background='grey')
+    new.title("Calender")
+    new.geometry("250x140")
+    cal = Label(new, text="Calender",bg='grey',font=("times", 28, "bold"))
+    #Label for enter year
+    year = Label(new, text="Enter year", bg='dark grey')
+    #text box for year input
+    year_field=Entry(new)
+    button = Button(new, text='Show Calender',fg='Black',bg='Blue',command=showCalender)
+    #adjusting widgets in position
+    cal.grid(row=1, column=1)
+    year.grid(row=2, column=1)
+    year_field.grid(row=3, column=1)
+    button.grid(row=4, column=1)
+    Exit.grid(row=6, column=1)
+    new.mainloop()
+    
+
+3. Convert Image to a Pencil Sketch using Python
+
+This is going to be interesting. We will be writing the code step by step with the explanation.
+
+We will use the OpenCV library for this project. Install it using pip install opencv-python command.
+
+Step 1: Find an image that you want to convert to a pencil sketch.
+
+We are going to use a dog image. You can choose whatever you want.
+
+Step 2: Read the image in RBG format and then convert it to a grayscale image. Now, the image is turned into a classic black and white photo.
+
+import cv2
+#reading image
+image = cv2.imread("dog.jpg")
+#converting BGR image to grayscale gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+Step 3: Invert the grayscale image also called the negative image, this will be our inverted grayscale image. Inversion is basically used to enhance details.
+
+#image inversion
+inverted_image = 255 - gray_image
+Step 4: Finally create the pencil sketch by mixing the grayscale image with the inverted blurry image. This is done by dividing the grayscale image by the inverted blurry image.
+
+blurred = cv2.GaussianBlur(inverted_image, (21, 21), 0)
+inverted_blurred = 255 - blurred
+pencil_sketch = cv2.divide(gray_image, inverted_blurred, scale=256.0)
+We now got our pencil_sketch. So, display it using OpenCV.
+
+cv2.imshow("Original Image", image)
+cv2.imshow("Pencil Sketch of Dog", pencil_sketch)
+cv2.waitKey(0)
