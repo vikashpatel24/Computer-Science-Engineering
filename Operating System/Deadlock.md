@@ -8,12 +8,14 @@ All the processes in a system require some resources such as central processing 
 A deadlock is a situation in which more than one process is blocked because it is holding a resource and also requires some resource that is acquired by some other process. Therefore, none of the processes gets executed.
 
 # Neccessary Conditions for Deadlock
-- Mutual Exclusion: Only one process can use a resource at any given time i.e. the resources are non-sharable.
-- Hold and wait: A process is holding at least one resource at a time and is waiting to acquire other resources held by some other process.
-- No preemption: The resource can be released by a process voluntarily i.e. after execution of the process.
-- Circular Wait: A set of processes are waiting for each other in a circular fashion. For example, lets say there are a set of processes { P0, P1, P2, P3 } such that P0 depends P1, P1 depends P2, P2 depends on P3 and P3 depends on P0. This creates a circular relation between all these processes and they have to wait forever to be executed.
+- **Mutual Exclusion:** Only one process can use a resource at any given time i.e. the resources are non-sharable.<br>
+- **Hold and wait:** A process is holding at least one resource at a time and is waiting to acquire other resources held by some other process.<br>
+- **No preemption:** The resource can be released by a process voluntarily i.e. after execution of the process.<br>
+- **Circular Wait:** A set of processes are waiting for each other in a circular fashion. For example, lets say there are a set of processes { P0, P1, P2, P3 } such that P0 depends P1, P1 depends P2, P2 depends on P3 and P3 depends on P0. This creates a circular relation between all these processes and they have to wait forever to be executed.<br>
  
- Example
+ **Example :**
+ ![Screenshot (251)](https://user-images.githubusercontent.com/67328331/196383516-84d04dc8-5058-46b4-96f6-51b2d57d26c6.png)
+
    &nbsp;
  In the above figure, there are two processes and two resources. Process 1 holds "Resource 1" and needs "Resource 2" while Process 2 holds "Resource 2" and requires "Resource 1". This creates a situation of deadlock because none of the two processes can be executed. Since the resources are non-shareable they can only be used by one process at a time(Mutual Exclusion). Each process is holding a resource and waiting for the other process the release the resource it requires. None of the two processes releases their resources before their execution and this creates a circular wait. Therefore, all four conditions are satisfied.<br><br>
  
@@ -31,21 +33,23 @@ Therefore, it requires additional information such as how many resources of each
 - **Deadlock Detection and Recovery**
 We let the system fall into a deadlock and if it happens, we detect it using a detection algorithm and try to recover.
 
-# Some ways of recovery are as follows.
+ **Some ways of recovery are as follows.**
 
 - Aborting all the deadlocked processes.
 - Abort one process at a time until the system recovers from the deadlock.
-- Resource Preemption: Resources are taken one by one from a process and assigned to higher priority processes until the deadlock is resolved.
+- Resource Preemption: Resources are taken one by one from a process and assigned to higher priority processes until the deadlock is resolved.<br><br>
 
-- **Deadlock Ignorance**
+- **Deadlock Ignorance**<br>
 In the method, the system assumes that deadlock never occurs. Since the problem of deadlock situation is not frequent, some systems simply ignore it. Operating systems such as UNIX and Windows follow this approach. However, if a deadlock occurs we can reboot our system and the deadlock is resolved automatically.
 
-Note: The above approach is an example of Ostrich Algorithm. It is a strategy of ignoring potential problems on the basis that they are extremely rare.
+**Note:** The above approach is an example of Ostrich Algorithm. It is a strategy of ignoring potential problems on the basis that they are extremely rare.
 
 # Difference between Starvation and Deadlocks
+![Screenshot (252)](https://user-images.githubusercontent.com/67328331/196383905-3dcc4dd2-a54f-4dc7-ae00-6255935c5896.png)
 
 
-#Advantage of Deadlock Method
+
+# Advantage of Deadlock Method
 - No preemption is needed for deadlocks.
 - It is a good method if the state of the resource can be saved and restored easily.
 - It is good for activities that perform a single burst of activity.
