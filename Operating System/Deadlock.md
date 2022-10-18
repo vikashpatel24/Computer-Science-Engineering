@@ -27,7 +27,8 @@ So, with the help of Spooling, we can stop mutual exclusion, but we may suffer t
  1. We cannot use spooling for every resource.<br>
  2. In spooling, a rare condition between the processes may occur in which the processes want some space in the spool. At the same time, we cannot force to use the same resources for more than one process. Because this approach fails here and if we are doing this, then there may be a possibility that some serious problems may arise related to the process. So, we can say that practically the violation of mutual exclusion is not possible.<br><br>
 
-# **2. Hold and wait:** A process is holding at least one resource at a time and is waiting to acquire other resources held by some other process.<br><br>
+# **2. Hold and wait:** 
+A process is holding at least one resource at a time and is waiting to acquire other resources held by some other process.<br><br>
 Hold and Wait is a condition where a process holds a resource and still waits for other resources to finish its job. In this situation, there is a possibility of deadlock because more than one process holding one resource each and cyclically wait for other resources for their execution. So, we need to find some procedure through which either process does not hold any resource or does not wait for any resource. This means we should assign all the resources which the process needs before starting its execution. Then, the execution of the process starts without waiting for any resource.<br>
 
 Practically we can implement this only if in starting the process, determine all the resources which the process needs. Although it sounds very practical, in the computer system, we cannot do this; the reason is at the start, no process can define the necessary resources.<br>
