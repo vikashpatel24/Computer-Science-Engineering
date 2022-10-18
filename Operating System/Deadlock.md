@@ -45,7 +45,8 @@ In the method, the system assumes that deadlock never occurs. Since the problem 
 **Note:** The above approach is an example of Ostrich Algorithm. It is a strategy of ignoring potential problems on the basis that they are extremely rare.
 
 # Difference between Starvation and Deadlocks:
-![Screenshot (252)](https://user-images.githubusercontent.com/67328331/196383905-3dcc4dd2-a54f-4dc7-ae00-6255935c5896.png)
+![Screenshot (253)](https://user-images.githubusercontent.com/67328331/196386527-06133d74-ea98-4e5f-8355-59c8ccc780fd.png)
+
 
 
 
