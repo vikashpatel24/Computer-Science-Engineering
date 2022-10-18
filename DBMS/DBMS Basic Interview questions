@@ -1,0 +1,71 @@
+1. What is DBMS and what is its utility? Explain RDBMS with examples.
+DBMS stands for Database Management System, is a set of applications or programs that enable users to create and maintain a database. DBMS provides a tool or an interface for performing various operations such as inserting, deleting, updating, etc. into a database. It is software that enables the storage of data more compactly and securely as compared to a file-based system. A DBMS system helps a user to overcome problems like data inconsistency, data redundancy, etc. in a database and makes it more convenient and organized to use it.
+
+2. What is a Database?
+A Database is an organized, consistent, and logical collection of data that can easily be updated, accessed, and managed. Database mostly contains sets of tables or objects (anything created using create command is a database object) which consist of records and fields. A tuple or a row represents a single entry in a table. An attribute or a column represents the basic units of data storage, which contain information about a particular aspect of the table. DBMS extracts data from a database in the form of queries given by the user. 
+
+3. Mention the issues with traditional file-based systems that make DBMS a better choice?
+The absence of indexing in a traditional file-based system leaves us with the only option of scanning the full page and hence making the access of content tedious and super slow. The other issue is redundancy and inconsistency as files have many duplicate and redundant data and changing one of them makes all of them inconsistent. Accessing data is harder in traditional file-based systems because data is unorganized in them.
+
+Another issue is the lack of concurrency control, which leads to one operation locking the entire page, as compared to DBMS where multiple operations can work on a single file simultaneously.
+
+Integrity check, data isolation, atomicity, security, etc. are some other issues with traditional file-based systems for which DBMSs have provided some good solutions.
+
+4. Explain different languages present in DBMS.
+Following are various languages present in DBMS:
+
+DDL(Data Definition Language):  It contains commands which are required to define the database.
+E.g., CREATE, ALTER, DROP, TRUNCATE, RENAME, etc.
+DML(Data Manipulation Language): It contains commands which are required to manipulate the data present in the database.
+E.g., SELECT, UPDATE, INSERT, DELETE, etc.
+DCL(Data Control Language):  It contains commands which are required to deal with the user permissions and controls of the database system.
+E.g., GRANT and REVOKE.
+TCL(Transaction Control Language):  It contains commands which are required to deal with the transaction of the database.
+E.g., COMMIT, ROLLBACK, and SAVEPOINT
+
+5. Are NULL values in a database the same as that of blank space or zero?
+No, a NULL value is very different from that of zero and blank space as it represents a value that is assigned, unknown, unavailable, or not applicable as compared to blank space which represents a character and zero represents a number.
+
+Example: NULL value in “number_of_courses” taken by a student represents that its value is unknown whereas 0 in it means that the student hasn’t taken any courses
+
+6. Explain the difference between intension and extension in a database.
+Following is the major difference between intension and extension in a database:
+
+Intension: Intension or popularly known as database schema is used to define the description of the database and is specified during the design of the database and mostly remains unchanged.
+Extension: Extension on the other hand is the measure of the number of tuples present in the database at any given point in time. The extension of a database is also referred to as the snapshot of the database and its value keeps changing as and when the tuples are created, updated, or destroyed in a database.
+
+7. Explain the difference between the DELETE and TRUNCATE command in a DBMS.
+DELETE command: this command is needed to delete rows from a table based on the condition provided by the WHERE clause.
+
+It deletes only the rows which are specified by the WHERE clause.
+It can be rolled back if required.
+It maintains a log to lock the row of the table before deleting it and hence it’s slow.
+TRUNCATE command: this command is needed to remove complete data from a table in a database. It is like a DELETE command which has no WHERE clause.
+
+It removes complete data from a table in a database.
+It can't be rolled back even if required. ( truncate can be rolled back in some databases depending on their version but it can be tricky and can lead to data loss). Check this link for more details
+It doesn’t maintain a log and deletes the whole table at once and hence it’s fast.
+
+8. What is a lock. Explain the major difference between a shared lock and an exclusive lock during a transaction in a database.
+A database lock is a mechanism to protect a shared piece of data from getting updated by two or more database users at the same time. When a single database user or session has acquired a lock then no other database user or session can modify that data until the lock is released.
+
+Shared Lock: A shared lock is required for reading a data item and many transactions may hold a lock on the same data item in a shared lock. Multiple transactions are allowed to read the data items in a shared lock.
+Exclusive lock: An exclusive lock is a lock on any transaction that is about to perform a write operation. This type of lock doesn’t allow more than one transaction and hence prevents any inconsistency in the database
+
+9.Why is the use of DBMS recommended? Explain by listing some of its major advantages.
+
+Answer: Some of the major advantages of DBMS are as follows:
+
+Controlled Redundancy: DBMS supports a mechanism to control the redundancy of data inside the database by integrating all the data into a single database and as data is stored at only one place, the duplicity of data does not happen.
+Data Sharing: Sharing of data among multiple users simultaneously can also be done in DBMS as the same database will be shared among all the users and by different application programs.
+Backup and Recovery Facility: DBMS minimizes the pain of creating the backup of data again and again by providing a feature of ‘backup and recovery’ which automatically creates the data backup and restores the data whenever required.
+Enforcement of Integrity Constraints: Integrity Constraints are very important to be enforced on the data so that the refined data after putting some constraints are stored in the database and this is followed by DBMS.
+Independence of data: It simply means that you can change the structure of the data without affecting the structure of any of the application programs.
+
+10.What are the main differences between Primary key and Unique Key?
+
+Answer: Given below are few differences:
+
+The main difference between the Primary key and Unique key is that the Primary key can never have a null value while the Unique key may consist of null value.
+In each table, there can be only one primary key while there can be more than one unique key in a table.
+
