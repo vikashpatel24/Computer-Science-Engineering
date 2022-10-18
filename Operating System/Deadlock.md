@@ -8,7 +8,9 @@ All the processes in a system require some resources such as central processing 
 A deadlock is a situation in which more than one process is blocked because it is holding a resource and also requires some resource that is acquired by some other process. Therefore, none of the processes gets executed.
 
 # Neccessary Conditions for Deadlock
-# **Mutual Exclusion:** Only one process can use a resource at any given time i.e. the resources are non-sharable.<br>
+These are the four necessary conditions for deadlock :
+# **1. Mutual Exclusion:** 
+Only one process can use a resource at any given time i.e. the resources are non-sharable.<br>
 
  From the resource point of view, the mutual exclusion means that simultaneously more than one process cannot use the same resource. However, this is fair enough, but due to this, a deadlock occurs. If there is a possibility that we can use the same resource for more than one process at a time, there will be no process that will be waiting for the resource.<br><br>
 
@@ -25,7 +27,7 @@ So, with the help of Spooling, we can stop mutual exclusion, but we may suffer t
  1. We cannot use spooling for every resource.<br>
  2. In spooling, a rare condition between the processes may occur in which the processes want some space in the spool. At the same time, we cannot force to use the same resources for more than one process. Because this approach fails here and if we are doing this, then there may be a possibility that some serious problems may arise related to the process. So, we can say that practically the violation of mutual exclusion is not possible.<br><br>
 
-# **Hold and wait:** A process is holding at least one resource at a time and is waiting to acquire other resources held by some other process.<br><br>
+# **2. Hold and wait:** A process is holding at least one resource at a time and is waiting to acquire other resources held by some other process.<br><br>
 Hold and Wait is a condition where a process holds a resource and still waits for other resources to finish its job. In this situation, there is a possibility of deadlock because more than one process holding one resource each and cyclically wait for other resources for their execution. So, we need to find some procedure through which either process does not hold any resource or does not wait for any resource. This means we should assign all the resources which the process needs before starting its execution. Then, the execution of the process starts without waiting for any resource.<br>
 
 Practically we can implement this only if in starting the process, determine all the resources which the process needs. Although it sounds very practical, in the computer system, we cannot do this; the reason is at the start, no process can define the necessary resources.<br>
@@ -36,12 +38,14 @@ The approach has the following issues:
 1. It is not possible, practically.<br>
 2. There may be a chance of starvation because, in some cases, the process can hold a resource for a long time.<br><br>
 
-# **No preemption:** The resource can be released by a process voluntarily i.e. after execution of the process.<br><br>
+# **3. No preemption:**
+The resource can be released by a process voluntarily i.e. after execution of the process.<br><br>
 The reason for the deadlock occurrence is that once the process starts its execution, then it cannot be halt. But we can prevent deadlock if we take away those resources from the process that may cause deadlock. But this is not a suitable approach because if we bring out a resource that is being used by the process, then this will be inconsistent with the work we have done until now.<br>
 
 **For example:** Suppose we have a printer that a process is using, and we take the printer away from that process and assign the printer to some other process. So in this way, the data which is printed by the printer become inconsistent as well as ineffective. Also, the process will not start printing further from where it left the process so, due to this performance can be inefficient.<br><br>
 
-# **Circular Wait:**  A set of processes are waiting for each other in a circular fashion. For example, lets say there are a set of processes { P0, P1, P2, P3 } such that P0 depends P1, P1 depends P2, P2 depends on P3 and P3 depends on P0. This creates a circular relation between all these processes and they have to wait forever to be executed.<br><br>
+# **4. Circular Wait:** 
+A set of processes are waiting for each other in a circular fashion. For example, lets say there are a set of processes { P0, P1, P2, P3 } such that P0 depends P1, P1 depends P2, P2 depends on P3 and P3 depends on P0. This creates a circular relation between all these processes and they have to wait forever to be executed.<br><br>
  Circular wait is the condition in which one or more process waits for the required resources in a circular order. By assigning the priority number to every resource, we can solve the problem of a circular wait. The process cannot request a resource that has lesser priority value. It assures that no process should demand the resource that is being used by the other process. Hence, no cycle will be formed.<br>
 
 So, by examining all these conditions, we found that there is only one approach that we can implement practically for preventing deadlock, and that approach is a violation of circular wait.<br><br>
