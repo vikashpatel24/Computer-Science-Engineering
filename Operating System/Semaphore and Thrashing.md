@@ -1,10 +1,10 @@
-<mark>What is Semaphore</mark>
+# What is Semaphore
 
 A Semaphore S is an integer variable that, apart from initialization, is accessed only through two standard atomic operations: wait() and signal().
 It is used to solve the critical section problem.
 
 
-Wait and Signal Operations
+# Wait and Signal Operations
 
 Wait
 
@@ -26,17 +26,17 @@ signal(S)
    S++; 
 } 
 
-Types of Semaphores
+# Types of Semaphores
 
 
-Counting Semaphores
+## Counting Semaphores
 These are integer value semaphores and have an unrestricted value domain. These semaphores are used to coordinate the resource access, where the semaphore count is the number of available resources. If the resources are added, semaphore count automatically incremented and if the resources are removed, the count is decremented.
 
 
-Binary Semaphores
+## Binary Semaphores
 The binary semaphores are like counting semaphores but their value is restricted to 0 and 1. The wait operation only works when the semaphore is 1 and the signal operation succeeds when semaphore is 0. It is sometimes easier to implement binary semaphores than counting semaphores.
 
-Advantages
+## Advantages
 
 Some of the advantages of semaphores are as follows −
 
@@ -47,7 +47,7 @@ There is no resource wastage because of busy waiting in semaphores as processor 
 Semaphores are implemented in the machine independent code of the microkernel. So they are machine independent.
 
 
-Disadvantages
+## Disadvantages
 
 Some of the disadvantages of semaphores are as follows −
 
@@ -59,18 +59,18 @@ Semaphores may lead to a priority inversion where low priority processes may acc
 
 
 
-<mark>Thrashing</mark>
+# Thrashing
 
 Thrashing is a condition or a situation when the system is spending a major portion of its time servicing the page faults, but the actual processing done is very negligible.
 
-Thrashing’s Causes
+# Thrashing’s Causes
 
 Thrashing has an impact on the operating system’s execution performance. Thrashing also causes serious performance issues with the operating system. When the CPU’s usage is low, the process scheduling mechanism tries to load multiple processes into memory at the same time, increasing the degree of Multi programming.
 
 ![image](https://user-images.githubusercontent.com/88574218/196340504-d18fd5da-f0c8-459d-b76c-9265692344f1.png)
 
 
-Page Fault Frequency
+# Page Fault Frequency
 
 To handling thrashing there is one method that is used called the Page-Fault Frequency concept. The problem associated with Thrashing is the high page fault rate and thus, the concept here is to control the page fault rate.
  If the page fault rate is too high, it indicates that the process has too few frames allocated to it. On the contrary, a low page fault rate indicates that the process has too many frames.
@@ -82,7 +82,7 @@ To handling thrashing there is one method that is used called the Page-Fault Fre
 ![image](https://user-images.githubusercontent.com/88574218/196340936-1a651f0a-136f-47cf-bde7-3059c710b989.png)
 
 
-Algorithms during Thrashing
+# Algorithms during Thrashing
 
 Whenever thrashing starts, the operating system tries to apply either the Global page replacement Algorithm or the Local page replacement algorithm.
 
@@ -95,11 +95,17 @@ Since global page replacement can bring any page, it tries to bring more pages w
 Unlike the global page replacement algorithm, local page replacement will select pages which only belong to that process. So there is a chance to reduce the thrashing. But it is proven that there are many disadvantages if we use local page replacement. Therefore, local page replacement is just an alternative to global page replacement in a thrashing scenario.
 
 
-How to Eliminate Thrashing
+# How to Eliminate Thrashing
 
 Thrashing has some negative impacts on hard drive health and system performance. Therefore, it is necessary to take some actions to avoid it. To resolve the problem of thrashing, here are the following methods, such as:
 
 Adjust the swap file size:If the system swap file is not configured correctly, disk thrashing can also happen to you.
-Increase the amount of RAM: As insufficient memory can cause disk thrashing, one solution is to add more RAM to the laptop. With more memory, your computer can handle tasks easily and don't have to work excessively. Generally, it is the best long-term solution.
-Decrease the number of applications running on the computer: If there are too many applications running in the background, your system resource will consume a lot. And the remaining system resource is slow that can result in thrashing. So while closing, some applications will release some resources so that you can avoid thrashing to some extent.
+Increase the amount of RAM: As insufficient memory can cause disk thrashing, one solution is to add more RAM to the laptop.
+With more memory, your computer can handle tasks easily and don't have to work excessively. 
+Generally, it is the best long-term solution.
+
+Decrease the number of applications running on the computer: 
+If there are too many applications running in the background, your system resource will consume a lot. 
+And the remaining system resource is slow that can result in thrashing. 
+So while closing, some applications will release some resources so that you can avoid thrashing to some extent.
 Replace programs: Replace those programs that are heavy memory occupied with equivalents that use less memory.
