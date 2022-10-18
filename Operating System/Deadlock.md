@@ -1,8 +1,8 @@
 # Deadlock in Operating System
   &nbsp;
 A deadlock in OS is a situation in which more than one process is blocked because it is holding a resource and also requires some resource that is acquired by some other process. The four necessary conditions for a deadlock situation to occur are mutual exclusion, hold and wait, no preemption and circular set. We can prevent a deadlock by preventing any one of these conditions. There are different ways to detect and recover a system from deadlock.<br><br>
-
-**What is Deadlock in OS?**
+  &nbsp;
+**What is Deadlock in OS?**<br><br>
 All the processes in a system require some resources such as central processing unit(CPU), file storage, input/output devices, etc to execute it. Once the execution is finished, the process releases the resource it was holding. However, when many processes run on a system they also compete for these resources they require for execution. This may arise a deadlock situation.
 
 A deadlock is a situation in which more than one process is blocked because it is holding a resource and also requires some resource that is acquired by some other process. Therefore, none of the processes gets executed.
@@ -11,7 +11,7 @@ A deadlock is a situation in which more than one process is blocked because it i
 - **Mutual Exclusion:** Only one process can use a resource at any given time i.e. the resources are non-sharable.<br><br>
 - **Hold and wait:** A process is holding at least one resource at a time and is waiting to acquire other resources held by some other process.<br><br>
 - **No preemption:** The resource can be released by a process voluntarily i.e. after execution of the process.<br><br>
-- **Circular Wait:** A set of processes are waiting for each other in a circular fashion. For example, lets say there are a set of processes { P0, P1, P2, P3 } such that P0 depends P1, P1 depends P2, P2 depends on P3 and P3 depends on P0. This creates a circular relation between all these processes and they have to wait forever to be executed.<br>
+- **Circular Wait:**  A set of processes are waiting for each other in a circular fashion. For example, lets say there are a set of processes { P0, P1, P2, P3 } such that P0 depends P1, P1 depends P2, P2 depends on P3 and P3 depends on P0. This creates a circular relation between all these processes and they have to wait forever to be executed.<br><br>
   &nbsp;
  **Example :**<br><br>
  ![Screenshot (251)](https://user-images.githubusercontent.com/67328331/196383516-84d04dc8-5058-46b4-96f6-51b2d57d26c6.png)
