@@ -1,4 +1,4 @@
-==What is Semaphore?==
+<bold>at is Semaphore</bold>
 
 A Semaphore S is an integer variable that, apart from initialization, is accessed only through two standard atomic operations: wait() and signal().
 It is used to solve the critical section problem.
