@@ -25,7 +25,7 @@ Web Development
 * Create Folder in this repo and Add relevant topic you wanted to contribute.
 * Will be creating website based on your contributed materials and your profile will be linked with the contributed topic.
 * Add your linkedin profile using the following format:
-    - Create a folder using your github username with extension .md and add it into contributors profile folder.
+    - Create a file using your github username with extension .md and add it into contributors profile folder.
           Example : its-red-eagle.md
          - In markdown file write:
             - Your name  
