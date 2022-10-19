@@ -5,6 +5,7 @@ A Database Transaction is a logical unit of processing in a DBMS which entails o
 All types of database access operation which are held between the beginning and end transaction statements are considered as a single logical transaction in DBMS. During the transaction the database is inconsistent. Only once the database is committed the state is changed from one consistent state to another.<br><br>
 
 ![Screenshot (259)](https://user-images.githubusercontent.com/67328331/196790009-6c29b8ea-bd3b-43bd-a137-3efa721f469f.png)
+<br><br>
 
 
 # Facts about Database Transactions
@@ -36,22 +37,22 @@ The various states of a transaction concept in DBMS are listed below:<br>
 
 **Let’s study a state transition diagram that highlights how a transaction moves between these various states:**
 
-1. Once a transaction states execution, it becomes active. It can issue READ or WRITE operation.<br>
-2. Once the READ and WRITE operations complete, the transactions becomes partially committed state.<br>
-3. Next, some recovery protocols need to ensure that a system failure will not result in an inability to record changes in the transaction permanently. If this check is a success, the transaction commits and enters into the committed state.<br>
-4. If the check is a fail, the transaction goes to the Failed state.<br>
-5. If the transaction is aborted while it’s in the active state, it goes to the failed state. The transaction should be rolled back to undo the effect of its write operations on the database.<br>
-6. The terminated state refers to the transaction leaving the system.<br>
+**1.** Once a transaction states execution, it becomes active. It can issue READ or WRITE operation.<br>
+**2.** Once the READ and WRITE operations complete, the transactions becomes partially committed state.<br>
+**3.** Next, some recovery protocols need to ensure that a system failure will not result in an inability to record changes in the transaction permanently. If this check is a success, the transaction commits and enters into the committed state.<br>
+**4.** If the check is a fail, the transaction goes to the Failed state.<br>
+**5.** If the transaction is aborted while it’s in the active state, it goes to the failed state. The transaction should be rolled back to undo the effect of its write operations on the database.<br>
+**6.** The terminated state refers to the transaction leaving the system.<br><br>
 
 
 # What are ACID Properties?
 
-ACID Properties are used for maintaining the integrity of database during transaction processing. ACID in DBMS stands for Atomicity, Consistency, Isolation, and Durability.
+ACID Properties are used for maintaining the integrity of database during transaction processing. ACID in DBMS stands for **Atomicity**, **Consistency**, **Isolation**, and **Durability.**
 
-**Atomicity:** A transaction is a single unit of operation. You either execute it entirely or do not execute it at all. There cannot be partial execution.<br><br>
-**Consistency:** Once the transaction is executed, it should move from one consistent state to another.<br><br>
-**Isolation:** Transaction should be executed in isolation from other transactions (no Locks). During concurrent transaction execution, intermediate transaction results from simultaneously executed transactions should not be made available to each other. (Level 0,1,2,3)<br><br>
-**Durability:** · After successful completion of a transaction, the changes in the database should persist. Even in the case of system failures.<br><br>
+- **Atomicity:** A transaction is a single unit of operation. You either execute it entirely or do not execute it at all. There cannot be partial execution.<br><br>
+- **Consistency:** Once the transaction is executed, it should move from one consistent state to another.<br><br>
+- **Isolation:** Transaction should be executed in isolation from other transactions (no Locks). During concurrent transaction execution, intermediate transaction results from simultaneously executed transactions should not be made available to each other. (Level 0,1,2,3)<br><br>
+- **Durability:** · After successful completion of a transaction, the changes in the database should persist. Even in the case of system failures.<br><br>
 
 # ACID Property in DBMS with example:
 
@@ -66,25 +67,25 @@ Transaction 2 is crediting each account with a 10% interest payment.<br>
 If both transactions are submitted together, there is no guarantee that the Transaction 1 will execute before Transaction 2 or vice versa. Irrespective of the order, the result must be as if the transactions take place serially one after the other.<br><br>
 
 # Types of Transactions
-**Based on Application areas**
+**Based on Application areas :**
 - Non-distributed vs. distributed
 - Compensating transactions
 - Transactions Timing
 - On-line vs. batch
 
-**Based on Actions**
+**Based on Actions :**
 
 - Two-step
 - Restricted
 - Action model
 
-**Based on Structure**
+**Based on Structure :**
 
 - Flat or simple transactions: It consists of a sequence of primitive operations executed between a begin and end operations.
 - Nested transactions: A transaction that contains other transactions.
 - Workflow
 
-
+<br><br>
 # What is a Schedule?
 A Schedule is a process creating a single group of the multiple parallel transactions and executing them one by one. It should preserve the order in which the instructions appear in each transaction. If two transactions are executed at the same time, the result of one transaction may affect the output of other.
 
@@ -94,19 +95,19 @@ A Schedule is a process creating a single group of the multiple parallel transac
 <br>
 If Transaction 2 is executed before Transaction 1, outdated information about the product quantity will be read. Hence, schedules are required.
 
-Parallel execution in a database is inevitable. But, Parallel execution is permitted when there is an equivalence relation amongst the simultaneously executing transactions. This equivalence is of 3 Types.
+Parallel execution in a database is inevitable. But, Parallel execution is permitted when there is an equivalence relation amongst the simultaneously executing transactions. This equivalence is of 3 Types.<br><br>
 
-# RESULT EQUIVALENCE:
+# Result Equivalence:
 
-If two schedules display the same result after execution, it is called result equivalent schedule. They may offer the same result for some value and different results for another set of values. For example, one transaction updates the product quantity, while other updates customer details.
+If two schedules display the same result after execution, it is called result equivalent schedule. They may offer the same result for some value and different results for another set of values. For example, one transaction updates the product quantity, while other updates customer details.<br><br>
 
 # View Equivalence
 
-View Equivalence occurs when the transaction in both the schedule performs a similar action. Example, one transaction inserts product details in the product table, while another transaction inserts product details in the archive table. The transaction is the same, but the tables are different.
+View Equivalence occurs when the transaction in both the schedule performs a similar action. Example, one transaction inserts product details in the product table, while another transaction inserts product details in the archive table. The transaction is the same, but the tables are different.<br><br>
 
-# CONFLICT Equivalence
+# Conflict Equivalence
 
-In this case, two transactions update/view the same set of data. There is a conflict amongst transaction as the order of execution will affect the output.
+In this case, two transactions update/view the same set of data. There is a conflict amongst transaction as the order of execution will affect the output.<br><br>
 
 
 # What is Serializability?
@@ -114,8 +115,9 @@ Serializability is the process of search for a concurrent schedule who output is
 
 - Conflict
 - View
+- <br><br>
 
-# Summary:
+# SUMMARY:
 - Transaction management is a logical unit of processing in a DBMS which entails one or more database access operation
 - It is a transaction is a program unit whose execution may or may not change the contents of a database.
 - Not managing concurrent access may create issues like hardware failure and system crashes.
