@@ -26,7 +26,7 @@ the sooner will the process get the CPU. It is the non-preemptive type of schedu
   till the completion of the previous process and select that process among the pool
   which is having minimum Burst time.
 
-![alt text](http://media.geeksforgeeks.org/wp-content/cdn-uploads/20200303163658/SJF.jpg/)
+![Alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200303163658/SJF.jpg)
 
 # Implementation in CPP
 
