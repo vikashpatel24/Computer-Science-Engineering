@@ -63,3 +63,18 @@ A curated list of amazingly awesome resources for cloud computing.
 ## Distributed Systems in the Wild
 - [Bitcoin](https://bitcoin.org/bitcoin.pdf)
 
+## Books
+- [Kubernetes: Up and Running](http://www.amazon.com/Kubernetes-Running-Dive-Future-Infrastructure/dp/1491935677)
+- [Docker: Up & Running](http://www.amazon.com/Docker-Up-Running-Karl-Matthias/dp/1491917571)
+- [Building Microservices](http://www.amazon.com/Building-Microservices-Sam-Newman/dp/1491950358)
+
+## Presentations
+
+## Conferences
+- [Container Camp](https://container.camp/)
+- [Kubecon](https://kubecon.io/)
+- [dotScale](http://2015.dotscale.io/)
+
+## Other Awesome Lists
+- [Awesome Docker](https://github.com/veggiemonk/awesome-docker)
+- [Awesome Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
