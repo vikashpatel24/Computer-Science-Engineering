@@ -1,5 +1,3 @@
-# Computer-Science-Engineering
-This repo aims to cover all topics with detailed info that are related to computer science engineering.
 # <b>Star and follow to support</b>
 # Computer-Science
 
@@ -8,8 +6,7 @@ Internet
 DBMS  
 Cloud  
 Computing  
-Programming Languages 
-Python Projects for beginners
+Programming Languages  
 Software Engineering  
 Algorithms  
 Object Oriented Programming  
@@ -59,6 +56,7 @@ Web Development
 - [Data Structures & Algorithms]()
    - [Rabin-Karp String Matching Algorithm](Data%20Structures%20and%20Algorithms/Rabin-Karp-String-Matching-Algo.md)
    - [Sliding Window Algorithm](Data%20Structures%20and%20Algorithms/Sliding-Window-Algo.md)
+   - [Tim Sort Algorithm](Data%20Structures%20and%20Algorithms/Tim-Sort.md)
 - [Python](Python/python.md) 
 - [Machine Learning]()
    - [Machine Learning](Machine%20Learning/deep-learning.md)
@@ -74,7 +72,7 @@ Web Development
 - [SQL]()
    - [Introduction](SQL/Introduction.md)
    - [Commands](SQL/Commands.md)
-- [Python](Python/basic python projects/python.md)
+- [Python](Python/python.md)
 - [Programming Languages]()
    - [Introduction](Programming%20Languages/introduction.md)
    - [Types](Programming%20Languages/Types.md)
