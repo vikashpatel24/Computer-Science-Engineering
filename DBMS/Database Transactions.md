@@ -1,6 +1,6 @@
 
 # What is a Database Transaction?
-A Database Transaction is a logical unit of processing in a DBMS which entails one or more database access operation. In a nutshell, database transactions represent real-world events of any enterprise.
+A **Database Transaction** is a logical unit of processing in a DBMS which entails one or more database access operation. In a nutshell, database transactions represent real-world events of any enterprise.
 
 All types of database access operation which are held between the beginning and end transaction statements are considered as a single logical transaction in DBMS. During the transaction the database is inconsistent. Only once the database is committed the state is changed from one consistent state to another.<br><br>
 
@@ -115,7 +115,7 @@ Serializability is the process of search for a concurrent schedule who output is
 
 - Conflict
 - View
-- <br><br>
+ <br><br>
 
 # SUMMARY:
 - Transaction management is a logical unit of processing in a DBMS which entails one or more database access operation
