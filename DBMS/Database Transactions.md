@@ -2,7 +2,10 @@
 # What is a Database Transaction?
 A Database Transaction is a logical unit of processing in a DBMS which entails one or more database access operation. In a nutshell, database transactions represent real-world events of any enterprise.
 
-All types of database access operation which are held between the beginning and end transaction statements are considered as a single logical transaction in DBMS. During the transaction the database is inconsistent. Only once the database is committed the state is changed from one consistent state to another.
+All types of database access operation which are held between the beginning and end transaction statements are considered as a single logical transaction in DBMS. During the transaction the database is inconsistent. Only once the database is committed the state is changed from one consistent state to another.<br><br>
+
+![Screenshot (259)](https://user-images.githubusercontent.com/67328331/196790009-6c29b8ea-bd3b-43bd-a137-3efa721f469f.png)
+
 
 # Facts about Database Transactions
 
@@ -19,11 +22,16 @@ A database is a shared resource accessed. It is used by many users and processes
 
 Not managing concurrent access may create issues like:
 
-- Hardware failure and system crashes<br>
-- Concurrent execution of the same transaction, deadlock, or slow performance<br><br>
+- Hardware failure and system crashes.<br>
+- Concurrent execution of the same transaction, deadlock, or slow performance.<br><br>
 
 # States of Transactions
-The various states of a transaction concept in DBMS are listed below:
+The various states of a transaction concept in DBMS are listed below:<br>
+
+![Screenshot (260)](https://user-images.githubusercontent.com/67328331/196790481-a6d369f8-5ecc-4f57-a427-2de212facbc4.png)
+<br><br>
+![Screenshot (261)](https://user-images.githubusercontent.com/67328331/196790778-43eda681-aae0-42d1-8efb-a26f8b1dd58e.png)
+<br><br>
 
 
 **Let’s study a state transition diagram that highlights how a transaction moves between these various states:**
@@ -47,7 +55,9 @@ ACID Properties are used for maintaining the integrity of database during transa
 
 # ACID Property in DBMS with example:
 
-Below is an example of ACID property in DBMS:
+Below is an example of ACID property in DBMS:<br>
+![Screenshot (262)](https://user-images.githubusercontent.com/67328331/196791468-d3871bd0-b566-4edf-ad72-5e397e6c6033.png)
+
 
 Transaction 1 is transferring $50 from account X to account Y.<br>
 
@@ -78,8 +88,10 @@ If both transactions are submitted together, there is no guarantee that the Tran
 # What is a Schedule?
 A Schedule is a process creating a single group of the multiple parallel transactions and executing them one by one. It should preserve the order in which the instructions appear in each transaction. If two transactions are executed at the same time, the result of one transaction may affect the output of other.
 
-**Example**
+**Example**<br><br>
+![Screenshot (263)](https://user-images.githubusercontent.com/67328331/196791775-e03c2e2f-543a-4971-bb93-d59241bdd30b.png)
 
+<br>
 If Transaction 2 is executed before Transaction 1, outdated information about the product quantity will be read. Hence, schedules are required.
 
 Parallel execution in a database is inevitable. But, Parallel execution is permitted when there is an equivalence relation amongst the simultaneously executing transactions. This equivalence is of 3 Types.
