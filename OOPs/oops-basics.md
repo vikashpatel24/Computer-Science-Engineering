@@ -36,9 +36,9 @@ Data abstraction is one of the most essential and important features of object-o
 
 Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of the car or applying brakes will stop the car but he does not know about how on pressing accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of accelerator, brakes etc in the car. This is what abstraction is.
 
-* Abstraction using Classes: We can implement Abstraction in C++ using classes. The class helps us to group data members and member functions using available access specifiers. A Class can decide which data member will be visible to the outside world and which is not.
+* Abstraction using Classes: We can implement Abstraction using classes. The class helps us to group data members and member functions using available access specifiers. A Class can decide which data member will be visible to the outside world and which is not.
 
-* Abstraction in Header files: One more type of abstraction in C++ can be header files. For example, consider the pow() method present in math.h header file. Whenever we need to calculate the power of a number, we simply call the function pow() present in the math.h header file and pass the numbers as arguments without knowing the underlying algorithm according to which the function is actually calculating the power of numbers.
+* Abstraction in Header files: One more type of abstraction can be header files. For example, consider the pow() method present in math.h header file. Whenever we need to calculate the power of a number, we simply call the function pow() present in the math.h header file and pass the numbers as arguments without knowing the underlying algorithm according to which the function is actually calculating the power of numbers.
 
 #### Example of Absraction in c++
 
@@ -206,7 +206,7 @@ A real-life example of polymorphism is a person who at the same time can have di
 
 2. Runtime polymorphism
 
-#### Compile-time polymorphism 
+#### Compile-time polymorphism :
 
 **Function overloading**
 
@@ -287,7 +287,7 @@ int main()
 
 ```
 
-#### Runtime polymorphism 
+#### Runtime polymorphism :
 
 **Function overriding**
 
