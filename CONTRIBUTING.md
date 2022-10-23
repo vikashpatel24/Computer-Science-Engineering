@@ -34,14 +34,14 @@ Web Development
       - your github profile link
       - your linkedin profile link
       - and other platforms link if you want
-      Example:
-      Folder Name: its-red-eagle.md
-      "  
-       Yor Name (< >ADD two space after each line)  
-       Email Id...  
-       https://github.com/......../  
-       https://www.linkedin.com/.........../  
-       "
+        Example:
+        Folder Name: its-red-eagle.md
+        "  
+         Yor Name (< >ADD two space after each line)  
+         Email Id...  
+         https://github.com/......../  
+         https://www.linkedin.com/.........../  
+         "
 
 ## Star and follow to support
 
@@ -62,6 +62,7 @@ Web Development
   - [Deep Learning](Machine%20Learning/deep-learning.md)
 - [Operating System](Operating%20System/os.md)
   - [Round Robin Scheduling Algorithm](Operating%System/Round%Robin%Scheduling%Algorithm.md)
+  - [Priority Scheduling](Operating%System/Priority%Scheduling.md)
     For more, [click here](Operating%20System)
 - [Computer Organisation and Architecture]()
   - [Instruction Set Architecture](Computer%20Organisation%20and%20Architecture/InstructionSetArchitecture.md)
@@ -83,5 +84,4 @@ Web Development
   <img src="https://contrib.rocks/image?repo=its-red-eagle/Computer-Science-Engineering" />
 </a>
 
-- [CONTRIBUTORS LIST, CLICK HERE](Contributors%20List/README.md)  
-
+- [CONTRIBUTORS LIST, CLICK HERE](Contributors%20List/README.md)
