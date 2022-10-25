@@ -26,3 +26,21 @@ const callMe = function(name) {
  console.log(name);
  }
 ```
+
+## Arrow function hacks:-
+
+When having no arguments, you have to use empty parentheses in the function declaration:-
+
+```
+ const callMe = () => { 
+console.log('Max!');
+ }
+```
+
+When having exactly one argument, you may omit the parentheses:
+
+```
+ const callMe = name => { 
+ console.log(name);
+ }
+```
