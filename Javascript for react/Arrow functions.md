@@ -2,6 +2,7 @@ Arrow functions are a different way of creating functions in JavaScript. Besides
 
 Arrow function syntax may look strange but it's actually simple
 
+## normal function :-
 
 ```
 function callMe(name) { 
@@ -18,7 +19,7 @@ const callMe = function(name) {
 }
 ```
 
-becomes: 
+## Arrow function :- 
 
 ```
  const callMe = (name) => { 
