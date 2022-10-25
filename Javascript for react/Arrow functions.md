@@ -44,3 +44,19 @@ When having exactly one argument, you may omit the parentheses:
  console.log(name);
  }
 ```
+
+When just returning a value, you can use the following 
+shortcut:
+
+```
+const returnMe = name => nam
+```
+
+That's equal to:
+
+```
+const returnMe = name => { 
+ return name;
+}
+```
+
