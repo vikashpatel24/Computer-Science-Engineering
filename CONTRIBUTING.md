@@ -61,6 +61,7 @@ Web Development
   - [Machine Learning](Machine%20Learning/deep-learning.md)
   - [Deep Learning](Machine%20Learning/deep-learning.md)
 - [Operating System](Operating%20System/os.md)
+  - [First Come First Serve Algorithm](Operating%System/First%Come%First%Serve%Algorithm.md)
   - [Round Robin Scheduling Algorithm](Operating%System/Round%Robin%Scheduling%Algorithm.md)
   - [Priority Scheduling](Operating%System/Priority%Scheduling.md)
     For more, [click here](Operating%20System)
