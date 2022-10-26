@@ -64,6 +64,7 @@ Advantages Normalization
 * Data consistency within the database.
 * Much more flexible database design.
 * Enforces the concept of relational integrity.
+* Better and quicker execution.
 
 Disadvantages of Normalization
 -------------------
