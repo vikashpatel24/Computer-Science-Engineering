@@ -11,7 +11,7 @@ Basic Operations
 push() − Pushing (storing) an element on the stack.
 pop() − Removing (accessing) an element from the stack.
 
-When data is PUSHed onto stack.
+When data is Pushed onto stack.
 To use a stack efficiently, we need to check the status of stack as well. For the same purpose, the following functionality is added to stacks −
 peek() − get the top data element of the stack, without removing it.
 isFull() − check if stack is full.
