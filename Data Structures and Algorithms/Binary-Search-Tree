@@ -1,4 +1,4 @@
-**Binary Search Tree**
+Binary Search Tree
 
 A Binary Search Tree (BST) is a tree in which all the nodes follow the below-mentioned properties −
 
@@ -8,6 +8,8 @@ A Binary Search Tree (BST) is a tree in which all the nodes follow the below-men
 Thus, BST divides all its sub-trees into two segments; the left sub-tree and the right sub-tree and can be defined as −
 
          left_subtree (keys) < node (key) ≤ right_subtree (keys)
+         
+         
 
 Code in C-
 
