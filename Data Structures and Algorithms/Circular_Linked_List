@@ -1,0 +1,113 @@
+Circular Linked List
+
+Circular Linked List is a variation of Linked list in which the first element points to the last element and the last element points to the first element. 
+
+Basic Operations
+
+insert − Inserts an element at the start of the list.
+delete − Deletes an element from the start of the list.
+display − Displays the list.
+
+
+
+Code for Circular Linked List-
+
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+
+    int data;
+    struct node* next;
+}*first=NULL;
+void create(int A[],int n)
+{
+  struct node* last=NULL;
+  first=(struct node*)malloc(sizeof(struct node));
+  first->data=A[0];
+  first->next=NULL;
+  last=first;
+  first->next=first;
+  for(int i=1;i<n;i++)
+  {
+     struct node* temp=(struct node*)malloc(sizeof(struct node));
+     temp->data=A[i];
+     temp->next=NULL;
+     last->next=temp;
+     last=temp;
+     last->next=first;
+
+  }
+}
+void insert(int pos,int key)
+{
+    struct node* p=first;
+    struct node* temp=(struct node*)malloc(sizeof(struct node));
+    temp->data=key;
+    temp->next=NULL;
+   if(pos==0)
+   {
+       while(p->next!=first)
+       {
+           p=p->next;
+       }
+       p->next=temp;
+     temp->next=first;
+     first=temp;
+
+   }
+   else
+   {
+
+     for(int i=1;i<pos;i++)
+     {
+         p=p->next;
+     }
+     temp->next=p->next;
+     p->next=temp;
+   }
+}
+int deletei(int pos)
+{
+    struct node* p=first;
+    struct node* q;
+    if(pos==0)
+    {
+        while(p->next!=first)
+        {
+            p=p->next;
+        }
+        q=first;
+        p->next=first->next;
+        first=first->next;
+        free(q);
+    }
+    else
+    {
+        for(int i=1;i<pos;i++)
+        {
+            p=p->next;
+        }
+        q=p->next;
+        p->next=p->next->next;
+        free(q);
+    }
+}
+void display(struct node* p)
+{
+do
+{
+        printf("%d ",p->data);
+        p=p->next;
+
+}while(p!=first);
+}
+int main()
+{
+    int A[]={2,3,4,5,6};
+    create(A,5);
+    insert(5,88);
+    deletei(5);
+    display(first);
+}
+
