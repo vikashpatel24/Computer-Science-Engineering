@@ -65,6 +65,7 @@ Web Development
   - [Jenkins](DevOps/Jenkins.md)
   - [Kubernetes](DevOps/Kubernetes.md)
   - [Terraform](DevOps/Terraform.md)
+  - [CircleCI](DevOps/CircleCI.md)
 - [Python](Python/python.md)
 - [Machine Learning]()
   - [Machine Learning](Machine%20Learning/deep-learning.md)
