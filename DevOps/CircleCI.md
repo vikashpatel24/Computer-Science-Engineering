@@ -15,3 +15,17 @@ These jobs include:
 A pipeline is a set of instructions or steps that our CI tool will execute each time our code is updated.
 Jobs are a set of specific tasks for the building, testing and deploying stages. Each job is executed in a separate container or virtual machine.
 
+
+As a developer using CircleCI you can:
+
+SSH into any job to debug your build issues.
+Set up parallelism in your .circleci/config.yml file to run jobs faster.
+Configure caching with two simple keys to reuse data from previous jobs in your workflow.
+Configure self-hosted runners for unique platform support.
+Access Arm resources for the machine executor.
+Use orbs, reusable packages of configuration, to integrate with third parties.
+Use pre-built Docker images in a variety of languages.
+Use the API
+ to retrieve information about jobs and workflows.
+Use the CLI to access advanced tools locally.
+Get flaky test detection with test insights.
