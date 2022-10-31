@@ -1,0 +1,107 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+ // } Driver Code Ends
+
+
+bool comp(tuple<int,int,int> a, tuple<int,int,int>b){
+    
+	    int w1 = get<0>(a);
+	    int w2 = get<0>(b);
+	    
+	    return w1<w2;
+}
+
+class Solution
+{
+	public:
+	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+
+	int findpar(int node, int *par){
+	    
+	    if(par[node]<=-1){
+	        return node;
+	    }
+	    return par[node] = findpar(par[node],par);
+	}
+	
+	void merge(int u,int v, int *par){
+	    
+	    int ui = findpar(u,par);
+	    int vi = findpar(v,par);
+	    
+	    if(par[ui]<=par[vi]) // addd into ui as size if ui is more negative
+	     par[ui] += par[vi], par[vi] = ui;
+	    else
+	     par[vi] += par[ui], par[ui] = vi;
+	    
+	}
+	
+	int kruskal(int n,vector<tuple<int,int,int>>&edges){
+	    
+	    int ans=0;
+	    sort(edges.begin(),edges.end(),comp);
+	    int par[n+1];
+	    memset(par,-1,sizeof par);
+	    
+	    for(tuple<int,int,int> tp: edges){
+	        int wt = get<0>(tp);
+	        int u = get<1>(tp);
+	        int v = get<2>(tp);
+	       
+	       if(findpar(u,par)==findpar(v,par)) // check par[u] == pra[v] so there is cycle
+	         continue;
+	       
+	       merge(u,v,par);  
+	       ans += wt;
+	       
+	    }
+	    return ans;
+	}
+    int spanningTree(int V, vector<vector<int>> adj[])
+    {
+        
+       vector<tuple<int,int,int>>edges;
+       for(int i=0;i<V;i++){
+           for(vector<int>& v: adj[i]){
+               int child = v[0], wt = v[1];
+               edges.emplace_back(wt,i,child);
+           }
+       }
+       
+       return kruskal(V,edges);
+    }
+};
+
+// { Driver Code Starts.
+
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--) {
+        int V, E;
+        cin >> V >> E;
+        vector<vector<int>> adj[V];
+        int i=0;
+        while (i++<E) {
+            int u, v, w;
+            cin >> u >> v >> w;
+            vector<int> t1,t2;
+            t1.push_back(v);
+            t1.push_back(w);
+            adj[u].push_back(t1);
+            t2.push_back(u);
+            t2.push_back(w);
+            adj[v].push_back(t2);
+        }
+        
+        Solution obj;
+    	cout << obj.spanningTree(V, adj) << "\n";
+    }
+
+    return 0;
+}
+
+  // } Driver Code Ends

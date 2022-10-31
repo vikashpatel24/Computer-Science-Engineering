@@ -1,0 +1,6 @@
+(I) Select any vertex of given graph and add it to MST 
+(II) Add the edge of minimum weight from a vertex not in MST to the vertex in MST; 
+(III) It MST is complete the stop, otherwise go to step (II).
+
+*Worst case is the worst case time complexity of Prim’s algorithm if adjacency matrix is used?
+Use of adjacency matrix provides the simple implementation of the Prim’s algorithm. In Prim’s algorithm, we need to search for the edge with a minimum for that vertex. So, worst case time complexity will be O(V2), where V is the number of vertices.

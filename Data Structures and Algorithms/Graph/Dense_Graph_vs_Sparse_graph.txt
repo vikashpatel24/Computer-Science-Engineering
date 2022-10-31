@@ -1,0 +1,6 @@
+Dense graph is a graph in which the number of edges is close to the maximal number of edges. 
+Sparse graph is a graph in which the number of edges is close to the minimal number of edges. Sparse graph can be a disconnected graph.
+
+As the names indicate sparse graphs are sparsely connected (eg: Trees). Usually the number of edges is in O(n) where n is the number of vertices. Therefore adjacency lists are preferred since they require constant space for every edge.
+
+Dense graphs are densely connected. Here number of edges is usually O(n^2). Therefore adjacency matrix is preferred.
