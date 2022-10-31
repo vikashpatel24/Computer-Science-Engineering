@@ -1,0 +1,153 @@
+Easy C++ Solution Using Prim's algo (Min Heap as DS)
+
+Set src node dist to itself as 0
+push {0, 0} to min heap (I am starting from 0th node, you can start from anywhere)
+run while loop until q is empty, if empty go to step 10
+pop top from q (this will give us the minimum distance from all the existing edges)
+check if this node has been visited or not
+if not visited:
+Traverse through all the non visited neighbors of current node and push them along with their weights to q
+set visit for current node as visited in our vis ds
+add current node's weight to our sum
+go to step 3
+return sum
+Can find the code below: 
+
+    int spanningTree(int V, vector<vector<int>> adj[])
+   {
+       // code here
+       // first prepare our adjacency list
+       vector<bool> vis(V+1, false);
+       
+       priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+       
+       q.push({0, 0});
+       
+       int sum = 0;
+       while(!q.empty())
+       {
+           auto topPair = q.top();
+           int currentNode = topPair.second;
+           int currentWt = topPair.first;
+           q.pop();
+           
+           if(!vis[currentNode])
+           {
+               for(auto neighbor:adj[currentNode])
+               {
+                   if(!vis[neighbor[0]])
+                       q.push({neighbor[1], neighbor[0]});
+               }
+               vis[currentNode] = true;
+               sum+=currentWt;
+           }
+       }
+       return sum;
+   }
+ 
+
+TC: O(NLogN) (# of vertices * logN for priority queue)
+
+SC: O(N) 
+
+--------------------------------------------------------------------------------------
+
+
+Solution based on DSU(disjoint set union)/kruksal algo(min spanning tree)
+
+TC: (ElogE + ElogV)
+SC: (V^2)
+
+ 
+
+class Solution
+{
+   //Function to find sum of weights of edges of the Minimum Spanning Tree.
+   static int spanningTree(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj) 
+   {
+       // Add your code here
+       int[] par=new int[V];
+       int[] size=new int[V];
+       
+       for(int i=0;i<V;i++) par[i]=i;
+       Arrays.fill(size,1);
+       
+       List<Edge> edges=getEdges(adj,V);
+       
+       Collections.sort(edges,new Comparator<Edge>(){
+           @Override
+           public int compare(Edge e1,Edge e2){
+               return e1.weight-e2.weight;
+           }
+       });
+       
+       int minWeight=0;
+       
+       for(Edge e: edges){
+           boolean res=union(e.u,e.v,par,size);
+           if(res) minWeight+=e.weight;
+       }
+       
+       return minWeight;
+   }
+   
+   public static List<Edge> getEdges(ArrayList<ArrayList<ArrayList<Integer>>> adj,int V){
+       
+       boolean[][] created=new boolean[V][V];
+       for(int i=0;i<V;i++){
+           Arrays.fill(created[i],false);
+       }
+       
+       List<Edge> list=new ArrayList<>();
+       
+       for(int i=0;i<adj.size();i++){
+           for(int j=0;j<adj.get(i).size();j++){
+               int v=adj.get(i).get(j).get(0);
+               if(!created[i][v]){
+                   list.add(new Edge(i,v,adj.get(i).get(j).get(1)));
+                   created[i][v]=true;
+               }
+           }
+       }
+       
+       return list;
+   }
+   
+   public static boolean union(int u,int v,int[] par,int[] size){
+       int rootU=find(u,par);
+       int rootV=find(v,par);
+       
+       if(rootU==rootV) return false;
+       
+       if(size[rootU]>=size[rootV]){
+           size[rootU]+=size[rootV];
+           par[rootV]=rootU;
+       }
+       else{
+           size[rootV]+=size[rootU];
+           par[rootU]=rootV;
+       }
+       
+       return true;
+   }
+   
+   public static int find(int node,int[] par){
+       while(par[node]!=node){
+           node=par[node];
+       }
+       
+       return node;
+   }
+}
+
+class Edge{
+   int u;
+   int v;
+   int weight;
+   
+   public Edge(int u,int v,int weight){
+       this.u=u;
+       this.v=v;
+       this.weight=weight;
+   }
+}

@@ -1,0 +1,31 @@
+	void Topological_sort(int i,vector<int>adj[], vector<int>& vis, stack<int>&st){
+	vis[i] = 1;
+	
+	for(auto &x : adj[i]){
+		if(!vis[x]){
+			Topological_sort(x,adj,vis,st);
+		}
+	}
+
+	st.push(i);
+}
+
+	
+	vector<int> topoSort(int v, vector<int> adj[]) 
+	{
+	    vector<int>vis(v+1,0),ans;
+    	stack<int>st;
+    	
+    	for(int i=0;i<v;i++){
+    	    if(!vis[i]){
+    	        Topological_sort(0,adj,vis,st);
+    	    }
+    	}
+    	
+    	while(!st.empty()){
+    		ans.push_back(st.top());
+    		st.pop();
+    	}
+	  
+	   return ans;
+	}
