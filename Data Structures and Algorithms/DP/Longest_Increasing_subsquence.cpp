@@ -1,3 +1,23 @@
+<h1>Longest Common Subsequence</h1>
+
+<h2>Problem: </h2>
+Given an integer array nums, return the length of the longest strictly increasing subsequence. For example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].
+
+<h2>Algorithm: </h2>
+Input  : arr[] = {3, 10, 2, 11}
+LIS[] = {1, 1, 1, 1} (initially)
+Iteration-wise simulation : 
+
+1. arr[2] > arr[1] {LIS[2] = max(LIS [2], LIS[1]+1)=2}
+2. arr[3] < arr[1] {No change}
+3. arr[3] < arr[2] {No change}
+4. arr[4] > arr[1] {LIS[4] = max(LIS [4], LIS[1]+1)=2}
+5. arr[4] > arr[2] {LIS[4] = max(LIS [4], LIS[2]+1)=3}
+6. arr[4] > arr[3] {LIS[4] = max(LIS [4], LIS[3]+1)=3}
+
+<h2>Implementation in C++: </h2>
+
+```
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -15,26 +35,24 @@ int LIS(int *a,int n){
 
                        if(mx<list[i])
                          mx=list[i];
-                         //     if(list[i]>mx){
-                         //        cout<<mx<<" ";
-                         //        mx=list[i];  
-                         //        v.push_back(a[i]);
-                         // }
+                         
             }
         }
     }
-    for(int i=0;i<n;i++)
-        cout<<list[i]<<" ";
+    
     return mx;
 }
 
 int main(){
 
-    int n;cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++)
-        cin>>a[i];
-    cout<<endl<<"Longest increasing Substring: "<<LIS(a,n);
+    int n = 6;
+    int a[n] = {4,6,5,3,7,8};
+    
+    cout<<"Length of Longest increasing Substring: "<<LIS(a,n);
 
     return 0;
 }
+
+```
+
+

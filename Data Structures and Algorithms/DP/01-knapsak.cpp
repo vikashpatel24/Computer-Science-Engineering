@@ -15,9 +15,9 @@ void knapsack(int wt[],int val [],int W,int n){
 		}
 	}
 
-     //using recursion....
-   //    if(n==0||W==0)
-	   // return 0;
+    // using recursion....
+    // if(n==0||W==0)
+	//  return 0;
 
 	// if(wt[n-1]<=W)
 	//  return	max(val[n-1]+knapsack(wt,val,W-wt[n-1],n-1),knapsack(wt,val,W,n-1));
@@ -25,31 +25,18 @@ void knapsack(int wt[],int val [],int W,int n){
 	// 	return knapsack(wt,val,W,n-1);
 
 }
+
 int main(){
 
-int n;cin>>n;
-int wt[n],val[n];
-for(int i=0;i<n;i++)
-cin>>wt[i];
-for(int j=0;j<n;j++)
-cin>>val[j];
-
-int W;cin>>W;
-
+int n = 5;
+int wt[n] = {7,2,4,5,6};
+int val[n] = {34,55,62,32,71};
+int W = 50;
 
 knapsack(wt,val,W,n);
-for(int i=0;i<=n;i++){
-		for(int j=0;j<=W;j++)
-			cout<<dp[i][j]<<" ";
-		cout<<endl;
-}
 
+cout<<"TOTAL PROFIT: "<<dp[n][W];
 
-cout<<endl<<"TOTAL PROFIT "<<dp[n][W];
-
-#ifndef ONLINE_JUDGE
-cout<<endl<<"TIME ELAPSED : "<< 1.0*clock()/CLOCKS_PER_SEC;
-#endif
-	return 0;
+return 0;
 
 }

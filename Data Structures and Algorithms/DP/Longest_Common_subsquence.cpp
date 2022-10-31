@@ -1,3 +1,18 @@
+<h1>Longest Common Subsequence</h1>
+
+<h2>Problem: </h2>
+Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.
+
+<h2>Algorithm: </h2>
+Bottom-up DP utilizes a matrix m where we track LCS sizes for each combination of i and j.
+
+If a[i] == b[j], LCS for i and j would be 1 plus LCS till the i-1 and j-1 indexes.
+Otherwise, we will take the largest LCS if we skip a charracter from one of the string (max(dp[i - 1][j], dp[i][j - 1]).
+
+<h2>Implementation in C++: </h2>
+
+```
+
 #include<bits/stdc++.h>
 using namespace std;
 int dp[100][100]={0};
@@ -47,3 +62,7 @@ int main(){
 
 	return 0;
 }
+
+```
+
+
