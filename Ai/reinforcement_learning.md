@@ -1,16 +1,15 @@
+# REINFORCEMENT LEARNING
+->Reinforcement Learning (RL) is a branch of machine learning that focuses on training agents to make decisions in an environment ->through trial and error. It involves learning optimal actions to maximize a cumulative reward signal.
 
-Reinforcement Learning (RL) is a branch of machine learning that focuses on training agents to make decisions in an environment through trial and error. It involves learning optimal actions to maximize a cumulative reward signal.
+->Here's an example of reinforcement learning and a code snippet in Python using the OpenAI Gym library:
 
-Here's an example of reinforcement learning and a code snippet in Python using the OpenAI Gym library:
+# Example:
+->Let's consider the scenario of training an RL agent to play a simple game called CartPole. In this game, the agent controls a cart ->hat must balance a pole on top. The agent can take actions to move the cart left or right to keep the pole balanced.
 
-Example:
-Let's consider the scenario of training an RL agent to play a simple game called CartPole. In this game, the agent controls a cart that must balance a pole on top. The agent can take actions to move the cart left or right to keep the pole balanced.
-
-Code in Python:
+# Code in Python:
 To run this code, you need to install the OpenAI Gym library by running pip install gym in your Python environment.
 
-python
-Copy code
+
 import gym
 
 # Create the CartPole environment
@@ -50,4 +49,6 @@ for episode in range(num_episodes):
 
 # Close the environment
 env.close()
+
+# BREIF ABOUT THE CODE 
 This code demonstrates a basic RL setup using the CartPole environment from OpenAI Gym. It runs a fixed number of episodes and within each episode, takes random actions to interact with the environment. The total reward accumulated in each episode is printed, indicating the agent's performance.

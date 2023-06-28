@@ -1,10 +1,12 @@
+# STATE SPACE TREE ALGORITHM
 
-One common algorithm for state space search is the breadth-first search (BFS) algorithm. BFS explores all the neighboring states of a given state before moving on to the next level of states. Here's an example of how the BFS algorithm works:
+->One common algorithm for state space search is the breadth-first search (BFS) algorithm. BFS explores all the neighboring states ->of a given state before moving on to the next level of states. Here's an example of how the BFS algorithm works:
 
-Let's consider a simple problem of finding a path from a starting point to a goal point on a grid. The grid has obstacles, and you can only move up, down, left, or right.
+# EXAMPLE :
+->Let's consider a simple problem of finding a path from a starting point to a goal point on a grid. The grid has obstacles, and you ->can only move up, down, left, or right.
 
-Define the problem:
-
+# Define the problem:
+# THEM FIRST
 State: Each state represents a point on the grid.
 Initial state: The starting point.
 Goal state: The desired destination.
@@ -14,6 +16,7 @@ Goal test: Checks if the current state is the goal state.
 Path cost: The cost associated with each step.
 Implement the BFS algorithm:
 
+# SECOND
 Create a queue to store states.
 Enqueue the initial state into the queue.
 Create a set to store visited states.
@@ -32,7 +35,7 @@ Start: (1, 1)
 Goal: (4, 4)
 Obstacles: (2, 2), (3, 2), (3, 3)
 
-Using BFS, the algorithm would explore the states in the following order:
+# Using BFS, the algorithm would explore the states in the following order:
 
 Level 1: (1, 1)
 Level 2: (2, 1), (1, 2)
@@ -43,4 +46,5 @@ Level 6: (4, 3), (3, 4)
 Level 7: (4, 4)
 The algorithm would return the path: (1, 1) -> (2, 1) -> (3, 1) -> (4, 1) -> (4, 2) -> (4, 3) -> (4, 4)
 
+# CONCLUSION 
 BFS guarantees that it will find the shortest path if one exists, but it may require a lot of memory if the state space is large.
