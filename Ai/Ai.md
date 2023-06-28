@@ -11,19 +11,33 @@
 
 There are many different types of AI, but some of the most common include:
 
-- **Reactive machines:** These machines can only react to their environment. They do not have any memory or ability to learn.
-- **Limited memory machines:** These machines can remember past events and use that information to make decisions. However, they cannot learn from their experiences.
-- **Theory of mind machines:** These machines can understand the intentions of other agents. They can also learn from their experiences and use that knowledge to improve their performance.
-- **Self-aware machines:** These machines are aware of themselves and their own existence. They can also understand the thoughts and feelings of other agents.
+- **Reactive machines:**
+ These machines can only react to their environment. They do not have any memory or ability to learn.
+
+- **Limited memory machines:** 
+These machines can remember past events and use that information to make decisions. However, they cannot learn from their experiences.
+
+- **Theory of mind machines:** 
+These machines can understand the intentions of other agents. They can also learn from their experiences and use that knowledge to improve their performance.
+
+- **Self-aware machines:**
+ These machines are aware of themselves and their own existence. They can also understand the thoughts and feelings of other agents.
 
 **Applications of AI**
 
 AI is being used in a wide range of applications, including:
 
-- **Game playing:** AI has been used to develop very successful game-playing programs, such as Deep Blue, which defeated Garry Kasparov in chess.
-- **Medical diagnosis:** AI is being used to develop systems that can help doctors diagnose diseases. These systems can analyze medical data and identify patterns that may indicate a particular disease.
-- **Fraud detection:** AI is being used to develop systems that can detect fraudulent transactions. These systems can analyze financial data and identify patterns that may indicate fraud.
-- **Self-driving cars:** AI is being used to develop self-driving cars. These cars use sensors and cameras to perceive their environment and make decisions about how to drive.
+- **Game playing:** 
+AI has been used to develop very successful game-playing programs, such as Deep Blue, which defeated Garry Kasparov in chess.
+
+- **Medical diagnosis:** 
+AI is being used to develop systems that can help doctors diagnose diseases. These systems can analyze medical data and identify patterns that may indicate a particular disease.
+
+- **Fraud detection:** 
+AI is being used to develop systems that can detect fraudulent transactions. These systems can analyze financial data and identify patterns that may indicate fraud.
+-
+ **Self-driving cars:**
+  AI is being used to develop self-driving cars. These cars use sensors and cameras to perceive their environment and make decisions about how to drive.
 
 ### **Future of AI**
 
